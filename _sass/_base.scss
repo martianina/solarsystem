@@ -10,6 +10,40 @@ dl, dd, ol, ul, figure {
 
 
 
+/** Variables **********************************************/
+// $base-font-family:              Helvetica, sans-serif;
+// $base-line-height:              1.5em;
+// $horizontal-spacing-unit:       50px;
+// $vertical-spacing-unit:         40px;
+$nav-height:                    56px;
+
+/* portfolio tinkering */
+// $img_spacing: 5px;
+// $img_height: 275px;
+// $caption_font_size: 12px;
+// $caption_color: #aaa;
+
+/* COLORS  */
+$red:  #FF3636;
+$orange: #F29105;
+$light-blue: #2698BA;
+$blue: #2a7ae2;
+$green: #11D68B;
+$lime_green: #B7D12A;
+$purple: #B509AC;
+
+
+$grey-color-dark: #333;   /* footer */
+$grey-color-light: #ddd;  /* navigation bar border */
+$text-color:     #000; // #666
+
+/* Set theme color *************************/
+// $theme-color:   $red;
+$brand-color:   $red;
+
+
+/************************************************************/
+
 /**
  * Basic styling
  */
@@ -35,7 +69,18 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
+.alignright {
+    float: right;
+}
 
+hr{
+    /* Inset, by Dan Eden */
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+}
 
 /**
  * Images
@@ -202,3 +247,12 @@ pre {
         }
     }
 }
+
+
+/***
+ * MY STYLES
+ */
+
+ iframe {
+     border: none;
+ }

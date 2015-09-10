@@ -3,13 +3,14 @@ title: Solar System
 description: Learn about our Solar System, Stars, Planets and Moons.
 baseurl: "/SolarSystem" # the subpath of your site, e.g. /blog/
 url: "http://publicarray.github.io/SolarSystem" # the base hostname & protocol for your site
+
 github_username:  publicarray
 
 # Build settings
 markdown: kramdown
 highlighter: pygments
 github: [Repository metadata]
-permalink: /:title/
+
 kramdown:
   input: GFM
 
@@ -19,7 +20,7 @@ sass:
 
 # Use the following plug-ins
 gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+    - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 
 # Exclude these files from your production _site
 exclude:

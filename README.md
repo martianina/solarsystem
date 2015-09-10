@@ -1,9 +1,9 @@
 # SolarSystem
 ## Install
 ### Requirements
-[http://jekyllrb.com/docs/installation/](http://jekyllrb.com/docs/installation/)
+[https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll](https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll)
 
-Ruby, Ruby Gems, Node.js an bundler
+[Ruby](https://www.ruby-lang.org/), [Ruby Gems](https://rubygems.org), [Node.js](https://nodejs.org/) and [bundler](http://bundler.io)
 
 ```
 gem install bundler

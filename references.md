@@ -1,4 +1,7 @@
-# References
+---
+layout: page
+title: References
+---
 [https://c1.goote.ch/379f2eb9aee7402fbd44650393419d83.scene/](https://c1.goote.ch/379f2eb9aee7402fbd44650393419d83.scene/)
 
 ## Animation
