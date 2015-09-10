@@ -1,6 +1,6 @@
 # Site settings
 title: Solar System
-description: > Learn about our Solar System, Stars, Planets and Moons.
+description: Learn about our Solar System, Stars, Planets and Moons.
 baseurl: "/SolarSystem" # the subpath of your site, e.g. /blog/
 url: "http://publicarray.github.io/SolarSystem" # the base hostname & protocol for your site
 github_username:  publicarray
