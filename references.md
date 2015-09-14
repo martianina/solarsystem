@@ -2,6 +2,7 @@
 layout: page
 title: References
 ---
+
 [https://c1.goote.ch/379f2eb9aee7402fbd44650393419d83.scene/](https://c1.goote.ch/379f2eb9aee7402fbd44650393419d83.scene/)
 
 ## Animation
@@ -10,8 +11,6 @@ title: References
 [http://goocreate.com/learn/scriptcomponent-solar-system/](http://goocreate.com/learn/scriptcomponent-solar-system/)
 
 [http://code.gooengine.com/latest/docs/index.html](http://code.gooengine.com/latest/docs/index.html)
-
-[http://goocreate.com/learn/engine-intro-tutorial/](http://goocreate.com/learn/engine-intro-tutorial/) _not implemented_
 
 ### Textures
 [http://planetpixelemporium.com/planets.html](http://planetpixelemporium.com/planets.html)
@@ -28,16 +27,17 @@ title: References
 [http://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html](http://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html)
 
 ### Music
-[https://www.jamendo.com/en/list/a118532/cinematic-atmosphere-elvolving-ambient-earth-space-adventure](https://www.jamendo.com/en/list/a118532/cinematic-atmosphere-elvolving-ambient-earth-space-adventure) _not implemented_
-
 [https://www.jamendo.com/en/artist/358490/stellardrone](https://www.jamendo.com/en/artist/358490/stellardrone)
 
 ## Quiz
 [http://www.dhtmlgoodies.com/index.html?showDownload=true&whichScript=drag-drop-quiz](http://www.dhtmlgoodies.com/index.html?showDownload=true&whichScript=drag-drop-quiz)
 
-# Frameworks
-[http://getbootstrap.com](http://getbootstrap.com) _not implemented_
+## Frameworks
+[http://code.gooengine.com/](http://code.gooengine.com)
 
-[https://jquery.com](https://jquery.com) _not implemented_
+[http://jekyllrb.com/](http://jekyllrb.com)
 
-[http://code.gooengine.com/](http://code.gooengine.com/)
+## Version Control & Hosting
+[http://github.com/](http://github.com)
+
+[https://pages.github.com/](https://pages.github.com)
