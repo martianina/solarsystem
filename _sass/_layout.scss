@@ -64,6 +64,7 @@
         border: 1px solid $grey-color-light;
         // border-radius: 5px;
         text-align: right;
+        line-height: $nav-height/1.5;// 56px;
 
         .menu-icon {
             display: block;
