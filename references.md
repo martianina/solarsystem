@@ -1,6 +1,7 @@
 ---
 layout: page
 title: References
+group: navigation
 ---
 
 [https://c1.goote.ch/379f2eb9aee7402fbd44650393419d83.scene/](https://c1.goote.ch/379f2eb9aee7402fbd44650393419d83.scene/)
