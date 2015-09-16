@@ -56,13 +56,13 @@
         }
     }
 
-    @include media-query($on-palm) {
+    @include media-query(705px) { // $on-palm = 600px
         position: absolute;
         top: 9px;
         right: 30px;
         background-color: $background-color;
         border: 1px solid $grey-color-light;
-        border-radius: 5px;
+        // border-radius: 5px;
         text-align: right;
 
         .menu-icon {
