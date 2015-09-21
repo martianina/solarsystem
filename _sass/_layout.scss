@@ -247,6 +247,17 @@ table {
 .post-content {
     margin-bottom: $spacing-unit;
 
+    h1, h2, h3, h4 {
+        &:before {
+            content: '';
+            display: block;
+            height: $nav-height+2;
+            margin-top: -($nav-height+2);
+            position: relative;
+            width: 0;
+        }
+    }
+
     h1 {
         border-bottom: $grey-color-light 1px solid;
         font-size: 42px;
