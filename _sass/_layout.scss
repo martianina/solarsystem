@@ -1,7 +1,7 @@
 /**
  * Site header
  */
- .site-header {
+.site-header {
     border-bottom: 1px solid $grey-color-light;
     background-color: #fff;
     // opacity: 0.75;
@@ -102,7 +102,19 @@
     }
 }
 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 16px;
+    td, th {
+        border: 1px solid $grey-color-light;
+        padding: 6px 13px;
+    }
 
+    tr:nth-child(2n) {
+        background-color: lighten($grey-color-light, 8);
+    }
+}
 
 /**
  * Site footer
@@ -117,12 +129,14 @@
     margin-bottom: $spacing-unit / 2;
 }
 
-.contact-list,
+// .contact-list,
+// .social-media-list {
+//     list-style: none;
+//     margin-left: 0;
+// }
 .social-media-list {
-    list-style: none;
-    margin-left: 0;
+    float: left;
 }
-
 .footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
@@ -131,9 +145,15 @@
 }
 
 .footer-col {
-    float: left;
+    // float: left;
     margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    // padding-left: $spacing-unit / 2;
+    p {
+        text-align: center;
+        a {
+            margin-right: 30px;
+        }
+    }
 }
 
 .footer-col-1 {
@@ -217,6 +237,7 @@
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
+    border-bottom: $grey-color-light 1px solid;
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -227,7 +248,10 @@
     margin-bottom: $spacing-unit;
 
     h1 {
-        font-size: 42px;;
+        border-bottom: $grey-color-light 1px solid;
+        font-size: 42px;
+        margin: 0 0 16px;
+        padding-bottom: 10px;
 
         @include media-query($on-laptop) {
             font-size: 36px;
@@ -235,7 +259,10 @@
     }
 
     h2 {
+        border-bottom: $grey-color-light 1px solid;
         font-size: 32px;
+        margin: 28px 0 16px;
+        padding-bottom: 8px;
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -243,7 +270,8 @@
     }
 
     h3 {
-        font-size: 26px;
+        font-size: 24px;
+        margin: 28px 0 16px;
 
         @include media-query($on-laptop) {
             font-size: 22px;
@@ -251,7 +279,8 @@
     }
 
     h4 {
-        font-size: 20px;
+        font-size: 17px;
+        margin: 28px 0 16px;
 
         @include media-query($on-laptop) {
             font-size: 18px;
