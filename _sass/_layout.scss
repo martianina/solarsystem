@@ -105,7 +105,9 @@
 table {
     border-collapse: collapse;
     border-spacing: 0;
+    display: block;
     margin-bottom: 16px;
+    overflow: auto;
     td, th {
         border: 1px solid $grey-color-light;
         padding: 6px 13px;
