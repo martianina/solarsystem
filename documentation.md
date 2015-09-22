@@ -12,7 +12,7 @@ Student Number: s2894777
 |-|-|
 |Topic|Solar System|
 |Topic Overview||
-|Ideas for visual styles, colors or interactive components:|2D Animation/simulation of the solar system in HTML/CSS/JS using webGL ([http://goocreate.com](http://goocreate.com))|
+|Ideas for visual styles, colors or interactive components:|2D Animation/simulation of the Solar System in HTML/CSS/JS using WebGL ([goocreate.com](http://goocreate.com))|
 |Target Audience:|5 - 7|
 |User Skills (assumed)|Ability to differentiate between shapes, size and color. Able to read. Know that the earth is round. Ability to use a tablet (android/iOS) or web browser|
 |Skills they may not have|Ability to judge small distances (relatively speaking, earth distances)|
@@ -30,7 +30,7 @@ Student Number: s2894777
 |Testing Users Knowledge|Drag & Drop Quizzes|
 
 ## Objectives Chart
-![](img/objectives.png)
+[![](img/objectives.png)](img/objectives.png)
 
 
 Comments: I aim to primarily present the content in a visual style. And In a Hierarchical learning style.
