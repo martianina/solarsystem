@@ -4,10 +4,11 @@ title: Documentation
 permalink: documentation.html
 ---
 
-## Learning Objectives Draft
 Student Name: Sebastian Schmidt
 
 Student Number: s2894777
+
+## Learning Objectives Draft
 
 |-|-|
 |Topic|Solar System|

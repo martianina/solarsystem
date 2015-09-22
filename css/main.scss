@@ -3,7 +3,14 @@
 ---
 @charset "utf-8";
 
-
+/* COLORS  */
+$red:  #FF3636;
+$orange: #F29105;
+$light-blue: #2698BA;
+$blue: #2a7ae2;
+$green: #11D68B;
+$lime_green: #B7D12A;
+$purple: #B509AC;
 
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
@@ -12,20 +19,29 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
+$nav-height:       56px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color:       #000;
+// $text-color:       #111;
+$background-color: rgba(255, 255, 255, .8);
+// $background-color: #fdfdfd;
+$brand-color:      $red;
+// $brand-color:      #2a7ae2;
+
 
 $grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-light: #ddd;
+// $grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  #333;
+// $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
 $content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
+
+
 
 
 

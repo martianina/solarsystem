@@ -33,6 +33,10 @@ group: navigation
 ## Quiz
 [dhtmlgoodies.com/index.html?showDownload=true&whichScript=drag-drop-quiz](http://www.dhtmlgoodies.com/index.html?showDownload=true&whichScript=drag-drop-quiz)
 
+[html5rocks.com/en/tutorials/dnd/basics](http://www.html5rocks.com/en/tutorials/dnd/basics/)
+
+[github.com/timruffles/ios-html5-drag-drop-shim](https://github.com/timruffles/ios-html5-drag-drop-shim)
+
 ## Frameworks
 [code.gooengine.com](http://code.gooengine.com)
 

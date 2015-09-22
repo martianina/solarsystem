@@ -8,52 +8,22 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
-/** Variables **********************************************/
-// $base-font-family:              Helvetica, sans-serif;
-// $base-line-height:              1.5em;
-// $horizontal-spacing-unit:       50px;
-// $vertical-spacing-unit:         40px;
-$nav-height:                    56px;
-
-/* portfolio tinkering */
-// $img_spacing: 5px;
-// $img_height: 275px;
-// $caption_font_size: 12px;
-// $caption_color: #aaa;
-
-/* COLORS  */
-$red:  #FF3636;
-$orange: #F29105;
-$light-blue: #2698BA;
-$blue: #2a7ae2;
-$green: #11D68B;
-$lime_green: #B7D12A;
-$purple: #B509AC;
-
-
-$grey-color-dark: #333;   /* footer */
-$grey-color-light: #ddd;  /* navigation bar border */
-$text-color:     #000; // #666
-
-/* Set theme color *************************/
-// $theme-color:   $red;
-$brand-color:   $red;
-
-
-/************************************************************/
-
 /**
  * Basic styling
  */
 body {
+    background-color: $background-color;
+    // background-image: url('../img/planet-581239_1280.jpg'); // https://pixabay.com/en/planet-moon-orbit-solar-system-581239/
+    background-image: url('../img/galaxy-10994_1280.jpg'); // https://pixabay.com/en/galaxy-barred-spiral-galaxy-10994/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: $text-color;
     font-family: $base-font-family;
     font-size: $base-font-size;
-    line-height: $base-line-height;
     font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
+    line-height: $base-line-height;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -194,6 +164,15 @@ pre {
 }
 
 
+// Remove the ability to select for draggable items
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: hand;
+}
+
 
 /**
  * Wrapper
@@ -205,6 +184,7 @@ pre {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
+    background: $background-color;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
