@@ -1,9 +1,10 @@
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="chrome=1">
-<title>Learn about our Solar System stars and planets - Goo Create</title>
+---
+layout: default
+title: Simulation
+permalink: /
+group: navigation
+---
+
 <script>
 // If you try to load a scene without a server, you're gonna have a bad time
 if (window.location.protocol==='file:') {
@@ -41,21 +42,12 @@ window.goo = {useOwnRequire: true};
 
 <!-- disable native mobile pinch-to-zoom, replacing with the Goo Engine zoom -->
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-<!-- og -->
-
-<meta property="og:image" content="res/cd428e15ca477c40d943c046ca00719e35ba824b.jpg">
 
 
+<meta property="og:image" content="goocreate/res/cd428e15ca477c40d943c046ca00719e35ba824b.jpg">
 
-
-<meta property="og:title" content="Learn about our Solar System stars and planets"/>
-<meta property="og:description" content="Made with Goo Create">
-<meta property="og:updated_time" content="2015-09-03T07:53:09.448182+00:00"/>
-<meta property="og:site_name" content="Goo Create"/>
-<meta property="og:type" content="website"/>
-<!-- /og -->
-<link rel="icon" href="favicon.png" type="image/png" />
-<link rel="stylesheet" type="text/css" href="style/style.css">
+<!-- <link rel="icon" href="favicon.png" type="goocreate/image/png" /> -->
+<link rel="stylesheet" type="text/css" href="goocreate/style/style.css">
 
 
 <script src="//code.gooengine.com/0.15.5/lib/goo.js"></script>
@@ -69,14 +61,10 @@ window.goo = {useOwnRequire: true};
 <script src="//code.gooengine.com/0.15.5/lib/physicspack.js"></script>
 
 
-
-</head>
-
-<body >
 	<div id="goo-loading-overlay" class="loading">
 		<div id="goo-loading-message">
 			<h1>Learn about our Solar System stars and planets</h1>
-			
+
 			<h2>Loading</h2>
 			<div id="progress-bar">
 				<div id="progress"></div>
@@ -85,12 +73,12 @@ window.goo = {useOwnRequire: true};
 	</div>
 	<div id="canvas-outer" class="hidden">
 		<div id="canvas-inner">
-			
+
 		</div>
 	</div>
-	
-	<div id="fallback" data-background="url(res/cd428e15ca477c40d943c046ca00719e35ba824b.jpg)">
-	
+
+	<div id="fallback" data-background="url(goocreate/res/cd428e15ca477c40d943c046ca00719e35ba824b.jpg)">
+
 		<div class="fallback-overlay">
 			<div class="fallback-content">
 
@@ -184,10 +172,8 @@ window.goo = {useOwnRequire: true};
 				</div>
 			</div>
 		</div>
-		<script src="js/CanvasWrapper.js"></script>
-		<script src="js/WebGLSupport.js"></script>
-		<script src="js/GSRVMock.js"></script>
-		<!--[if IE 9]><script src="js/shims.js"></script><![endif]-->
-		<script src="js/loadScene.js"></script>
-	</body>
-</html>
+		<script src="goocreate/js/CanvasWrapper.js"></script>
+		<script src="goocreate/js/WebGLSupport.js"></script>
+		<script src="goocreate/js/GSRVMock.js"></script>
+		<!--[if IE 9]><script src="goocreate/js/shims.js"></script><![endif]-->
+		<script src="goocreate/js/loadScene.js"></script>

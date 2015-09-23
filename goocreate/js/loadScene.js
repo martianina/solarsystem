@@ -124,7 +124,7 @@
 
 		// Load the scene
 		loadScene(gooRunner).then(function (loaderAndScene) {
-			
+
 
 			world.processEntityChanges();
 			transformSystem._process();
@@ -202,7 +202,7 @@
 		// The loader takes care of loading the data.
 		var loader = new goo.DynamicLoader({
 			world: gooRunner.world,
-			rootPath: 'res'
+			rootPath: 'goocreate/res'
 		});
 
 		return loader.load('root.bundle').then(function(result) {
@@ -216,7 +216,7 @@
 				}
 			}
 
-			
+
 
 			if (!scene || !scene.id) {
 				alert('Error: No scene in bundle'); // Should never happen.
