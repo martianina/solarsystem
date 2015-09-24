@@ -16,3 +16,10 @@ cd SolarSystem
 bundle
 jekyll serve
 ```
+
+### Update
+
+```
+git pull
+bundle update
+```
