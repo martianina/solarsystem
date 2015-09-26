@@ -1,4 +1,5 @@
 # SolarSystem
+[![Build Status](https://travis-ci.org/publicarray/solarsystem.svg?branch=gh-pages)](https://travis-ci.org/publicarray/solarsystem)
 ## Install
 ### Requirements
 [https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll](https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll)
