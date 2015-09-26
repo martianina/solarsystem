@@ -14,7 +14,7 @@ gem install bundler
 ```
 cd SolarSystem
 bundle
-jekyll serve
+jekyll serve --baseurl ''
 ```
 
 ### Update

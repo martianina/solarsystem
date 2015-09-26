@@ -1,0 +1,32 @@
+# Site settings
+title: Solar System
+description: Learn about our Solar System, Stars, Planets and Moons.
+# Use relative urls for Travis
+baseurl: "." # the subpath of your site, e.g. /blog/
+url: "http://publicarray.github.io/solarsystem" # the base hostname & protocol for your site
+
+github_username:  publicarray
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+github: [Repository metadata]
+
+kramdown:
+  input: GFM
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :expanded # You might prefer to minify using :compressed
+
+# Use the following plug-ins
+gems:
+    - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+
+# Exclude these files from your production _site
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - vendor
