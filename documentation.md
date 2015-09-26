@@ -31,7 +31,7 @@ Student Number: s2894777
 |Testing Users Knowledge|Drag & Drop Quizzes|
 
 ## Objectives Chart
-[![](img/objectives.png)](img/objectives.png)
+[![Flowchart of Objectives](img/objectives.png)](img/objectives.png)
 
 
 Comments: I aim to primarily present the content in a visual style. And In a Hierarchical learning style.

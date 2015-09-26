@@ -24,3 +24,9 @@ jekyll serve --baseurl ''
 git pull
 bundle update
 ```
+
+### Tests
+
+```
+./script/cibuild
+```
