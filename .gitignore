@@ -4,3 +4,5 @@ _site
 visual-test
 examples
 docs
+
+Gemfile.lock
