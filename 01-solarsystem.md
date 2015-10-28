@@ -3,9 +3,14 @@ layout: page
 title: Solar System
 permalink: solarsystem.html
 group: navigation
-css: [css/quiz.css]
-js: [js/ios-drag-drop.js, js/quiz.js]
+css:
+    - css/quiz.css
+js:
+    - js/ios-drag-drop.js
+    - js/quiz.js
 ---
+
+
 
 <script>var iosDragDropShim = { enableEnterLeave: true }</script>
 
