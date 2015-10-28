@@ -224,9 +224,9 @@ body {
 .dg.a .save-row, .dg.ac {
     top: 57px;
 }
-.dg.ac {
+/*.dg.ac {
     display: none;
-}
+}*/
 
 #fallback {
 	display: none;

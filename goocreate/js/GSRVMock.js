@@ -8,11 +8,11 @@ function showControls(e) {
     var key = (String.fromCharCode(e.keyCode || e.charCode).toUpperCase());
     if ("I" === key) {
         var controls = document.querySelector('.dg.ac');
-        if (controls.style.display === 'block')
+        if (controls.style.display === 'none')
         {
-            controls.style.display = 'none';
-        } else {
             controls.style.display = 'block';
+        } else {
+            controls.style.display = 'none';
         }
     }
 }
