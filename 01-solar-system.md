@@ -11,8 +11,7 @@ js:
     - js/quiz.js
 ---
 
-<!-- ![The Solar System](/img/solar-system.jpg) -->
-<img src="/img/solar-system.jpg" alt="The Solar System" usemap="#navigation" />
+<img src="img/solar-system.jpg" alt="The Solar System" usemap="#navigation" />
 
 <map name="navigation">
     <area shape="rect" coords="0,0,168,634" href="#our-sun" title="Our Sun" alt="Our Sun" />
@@ -32,7 +31,7 @@ There are two basic types of planets, Earth-like ("terrestrial") planets and Jup
 The Jovian planets are Jupiter, Saturn, Uranus and Neptune. They are large planets located in the outer part of the planetary realm of the Solar System. The Jovian planets are gas giants—large objects made mostly of hydrogen and helium. They are much larger than terrestrial planets. They are rapidly rotating objects. They all have rings, and extensive families of moons. They have no solid surface on which to stand, and the apparent visible surfaces are just the top layers of clouds in their atmospheres. Deeper in their atmospheres, the gases get thicker and thicker, until finally they turn into a liquid. At their centers, they may have a solid, rocky core a few times the size of Earth.
 
 ## Our Sun
-![Our Sun](/img/sun.jpg)
+![Our Sun](img/sun.jpg)
 
 ### Description
 
@@ -43,7 +42,7 @@ The Sun is at the center of the Solar System. The planets, asteroids and comets 
 # Terrestrial Planets:
 
 ## Mercury
-![Our Sun](/img/mercury.jpg)
+![Our Sun](img/mercury.jpg)
 
 ### Description
 
@@ -52,7 +51,7 @@ Mercury is the closest planet to the Sun and smallest of the terrestrial planets
 ### Quick Facts
 
 ## Venus
-![Our Sun](/img/venus.png)
+![Our Sun](img/venus.png)
 
 ### Description
 
@@ -61,7 +60,7 @@ Venus has a very thick atmosphere mostly composed of carbon dioxide gas. The thi
 ### Quick Facts
 
 ## Earth
-![Our Sun](/img/earth.jpg)
+![Our Sun](img/earth.jpg)
 
 ### Description
 
@@ -70,7 +69,7 @@ Earth is our home planet. Most of its surface (over 70%) is covered with oceans,
 ### Quick Facts
 
 ## Mars
-![Our Sun](/img/mars.jpg)
+![Our Sun](img/mars.jpg)
 
 ### Description
 
@@ -81,35 +80,33 @@ Mars is about half the size of Earth in diameter. Mars has a carbon dioxide atmo
 # Jovian Planets:
 
 ## Jupiter
-![Our Sun](/img/jupiter.jpg)
+![Our Sun](img/jupiter.jpg)
 
 ### Description
 
 ### Quick Facts
 
 ## Saturn
-![Our Sun](/img/saturn2.jpg)
+![Our Sun](img/saturn2.jpg)
 
 ### Description
 
 ### Quick Facts
 
 ## Uranus
-![Our Sun](/img/uranus.jpg)
+![Our Sun](img/uranus.jpg)
 
 ### Description
 
 ### Quick Facts
 
 ## Neptune
-![Our Sun](/img/neptune.png)
+![Our Sun](img/neptune.png)
 
 ### Description
 
 ### Quick Facts
 
-
-this is using the 'Whole to part' sequence method
 
 # Additional Resources
 
