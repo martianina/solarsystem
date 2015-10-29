@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Test Yourself
+title: Test
 permalink: test.html
 group: navigation
 ---
