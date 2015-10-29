@@ -54,12 +54,12 @@ hr {
 /**
  * Images
  */
-img {
+img, video {
     max-width: 100%;
+    margin: 0 auto;
+    display: block;
     vertical-align: middle;
 }
-
-
 
 /**
  * Figures

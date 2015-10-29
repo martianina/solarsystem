@@ -62,6 +62,12 @@ Venus has a very thick atmosphere mostly composed of carbon dioxide gas. The thi
 ## Earth
 ![Our Sun](img/earth.jpg)
 
+<!-- <video width="852" height="480" autoplay loop>
+	<source src="img/earth.mp4" type="video/mp4">
+    <source src="img/earth.webm" type="video/webm">
+	<source src="img/earth.ogv" type="video/ogg">
+</video> -->
+
 ### Description
 
 Earth is our home planet. Most of its surface (over 70%) is covered with oceans, with the rest featuring a wide variety of land forms, from mountains and valleys to plains and beaches. Earth has a thick atmosphere, which is mostly nitrogen (78%) and oxygen (21%). The region on and below the surface of Earth is filled with life which makes this planet unique.
