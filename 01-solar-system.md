@@ -11,6 +11,7 @@ js:
     - js/quiz.js
 ---
 
+<small>Click on an object to jump to it:</small>
 <img src="img/solar-system.jpg" alt="The Solar System" usemap="#navigation" />
 
 <map name="navigation">
@@ -18,6 +19,7 @@ js:
     <area shape="circle" coords="218,315,27" href="#mercury" title="Mercury" alt="Mercury" />
     <area shape="circle" coords="324,315,39" href="#venus" title="Venus" alt="Venus" />
     <area shape="circle" coords="464,315,50" href="#earth" title="Earth" alt="Earth" />
+    <area shape="circle" coords="508,256,13" href="#moon" title="Moon" alt="Moon" />
     <area shape="circle" coords="604,315,35" href="#mars" title="Mars" alt="Mars" />
     <area shape="rect" coords="700,95,1000,532" href="#jupiter" title="Jupiter" alt="Jupiter" />
     <area shape="rect" coords="1060,220,1350,420" href="#saturn" title="Saturn" alt="Saturn" />
@@ -73,6 +75,13 @@ Venus has a very thick atmosphere mostly composed of carbon dioxide gas. The thi
 Earth is our home planet. Most of its surface (over 70%) is covered with oceans, with the rest featuring a wide variety of land forms, from mountains and valleys to plains and beaches. Earth has a thick atmosphere, which is mostly nitrogen (78%) and oxygen (21%). The region on and below the surface of Earth is filled with life which makes this planet unique.
 
 ### Quick Facts
+
+### Moon
+![The Moon](img/moon.png)
+
+#### Description
+
+#### Quick Facts
 
 ## Mars
 ![Our Sun](img/mars.jpg)
