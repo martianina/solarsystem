@@ -83,3 +83,10 @@ Jekyll base theme: [github.com/jglovier/jekyll-new](https://github.com/jglovier/
 
 [nasa.gov](https://www.nasa.gov)
 
+## Lesson Information
+
+[messenger-education.org/teachers/Modules/Lessons/ourss.pdf](http://www.messenger-education.org/teachers/Modules/Lessons/ourss.pdf)
+
+## Library
+[github.com/davidjbradshaw/image-map-resizer](https://github.com/davidjbradshaw/image-map-resizer)
+
