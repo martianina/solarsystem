@@ -22,7 +22,7 @@ js:
     <area shape="circle" coords="218,315,27" href="#mercury" title="Mercury" alt="Mercury" />
     <area shape="circle" coords="324,315,39" href="#venus" title="Venus" alt="Venus" />
     <area shape="circle" coords="464,315,50" href="#earth" title="Earth" alt="Earth" />
-    <area shape="circle" coords="508,256,13" href="#moon" title="Moon" alt="Moon" />
+    <area shape="circle" coords="508,256,13" href="#the-moon" title="The Moon" alt="The Moon" />
     <area shape="circle" coords="604,315,35" href="#mars" title="Mars" alt="Mars" />
     <area shape="rect" coords="700,95,1000,532" href="#jupiter" title="Jupiter" alt="Jupiter" />
     <area shape="rect" coords="1060,220,1350,420" href="#saturn" title="Saturn" alt="Saturn" />
@@ -38,34 +38,78 @@ The Jovian planets are Jupiter, Saturn, Uranus and Neptune. They are large plane
 ## Our Sun
 ![Our Sun](img/sun.jpg)
 
-### Description
-
 The Sun is at the center of the Solar System. The planets, asteroids and comets all revolve around the Sun. The Sun’s role as the center of the planetary system comes from its high mass; it has 99.8% of the mass in the Solar System. The Sun is a star.
 
 ### Quick Facts
 
+Type|Star|
+
+<!-- Mass|4.8673 x 10<sup>24</sup> kg
+Diamiter|12,104 km|
+Gravity|8.87 m/s<sup>2</sup>|
+Escape Velocity|37,296 km/h|1.036 x 10<sup>4</sup> m/s
+Surface Temperature|462 °C|735 K
+Atmosphere|Carbon Dioxide, Nitrogen| CO<sub>2</sub>, N<sub>2</sub>
+Axial Tilt|0.007 degrees|
+No. of Moons|0|
+Mean Distance from Sun|108,209,475 km|0.72333566 AU
+Mean Orbit Velocity|126,074 km/h|3.5020 x 10<sup>4</sup> m/s
+Rotation Period|-243.018 Earth Days|-5832.4 Hours
+Orbit Period|1 Earth Years|365.2 Earth Days -->
+
 # Terrestrial Planets:
 
 ## Mercury
-![Our Sun](img/mercury.jpg)
-
-### Description
+![Mercury](img/mercury.jpg)
 
 Mercury is the closest planet to the Sun and smallest of the terrestrial planets. It has a very tenuous atmosphere, which is only a little more substantial than a vacuum. Sunlight heats up the surface of the planet to high temperatures during the day, up to 450ºC (840ºF). At night, the surface cools off rapidly, and the temperatures can drop down to -180ºC (-300ºF).
 
 ### Quick Facts
 
-## Venus
-![Our Sun](img/venus.png)
+Type|Terrestrial|
+Mass|0.055 x Earth's|3.3010 x 10<sup>23</sup> kg
+Diamiter|4,879 km|
+Gravity|3.7 m/s<sup>2</sup>|
+Escape Velocity|15,300 km/h|4.25 x 10<sup>3</sup> m/s
+Surface Temperature|-173/427 (min/max) °C|100/700 (min/max) K
+Atmosphere||
+Axial Tilt|0.01 degrees|
+Ring System?|No|
+Global Magnetic Field?|Yes|
+No. of Moons|0|
+Mean Distance from Sun|57,909,227 km|0.38709927 AU
+Mean Orbit Velocity|170,503 km/h|4.7362 x 10<sup>4</sup> m/s
+Rotation Period|58.646 Earth Days|1407.5 Hours
 
-### Description
+<!-- Orbit Period|1 Earth Years|365.2 Earth Days -->
+
+
+## Venus
+![Venus](img/venus.png)
 
 Venus has a very thick atmosphere mostly composed of carbon dioxide gas. The thick carbon dioxide atmosphere traps heat from the Sun during the day and does not let the surface cool at night; as a result, temperatures on the Venusian surface are over 464ºC (867º F). The high temperature and unbreathable thick atmosphere would make the planet very inhospitable to human visitors.
 
 ### Quick Facts
 
+Type|Terrestrial|
+Mass|4.8673 x 10<sup>24</sup> kg
+Diamiter|12,104 km|
+Gravity|8.87 m/s<sup>2</sup>|
+Escape Velocity|37,296 km/h|1.036 x 10<sup>4</sup> m/s
+Surface Temperature|462 °C|735 K
+Atmosphere|Carbon Dioxide, Nitrogen| CO<sub>2</sub>, N<sub>2</sub>
+Axial Tilt|0.007 degrees|
+Ring System?|No|
+Global Magnetic Field?|No|
+No. of Moons|0|
+Mean Distance from Sun|108,209,475 km|0.72333566 AU
+Mean Orbit Velocity|126,074 km/h|3.5020 x 10<sup>4</sup> m/s
+Rotation Period|-243.018 Earth Days|-5832.4 Hours
+
+<!-- Orbit Period|1 Earth Years|365.2 Earth Days -->
+
 ## Earth
-![Our Sun](img/earth.jpg)
+![Earth](img/earth.jpg)
 
 <!-- <video width="852" height="480" autoplay loop>
 	<source src="img/earth.mp4" type="video/mp4">
@@ -73,23 +117,44 @@ Venus has a very thick atmosphere mostly composed of carbon dioxide gas. The thi
 	<source src="img/earth.ogv" type="video/ogg">
 </video> -->
 
-### Description
-
 Earth is our home planet. Most of its surface (over 70%) is covered with oceans, with the rest featuring a wide variety of land forms, from mountains and valleys to plains and beaches. Earth has a thick atmosphere, which is mostly nitrogen (78%) and oxygen (21%). The region on and below the surface of Earth is filled with life which makes this planet unique.
 
 ### Quick Facts
 
-### Moon
-![The Moon](img/moon.png)
+Type|Terrestrial|
+Mass|5.9722 x 10<sup>24</sup> kg
+Diamiter|12,756 km|
+Gravity|9.80665 m/s<sup>2</sup>|
+Escape Velocity|40,284 km/h|1.119 x 10<sup>4</sup> m/s
+Surface Temperature|-88/58 (min/max) °C|185/331 (min/max) K
+Atmosphere|Nitrogen, Oxygen| N<sub>2</sub>, O<sub>2</sub>
+Axial Tilt|23.4393 degrees|
+Ring System?|No|
+Global Magnetic Field?|Yes|
+No. of Moons|1|
+Mean Distance from Sun|149,598,262 km|1 AU
+Mean Orbit Velocity|107,218 km/h|2.9783 x 10<sup>4</sup> m/s
+Rotation Period|0.99726968 Earth Days|23.934 Hours
+Orbit Period|1 Earth Years|365.2 Earth Days
 
-#### Description
+### The Moon
+![Earth's Moon](img/moon.png)
 
 #### Quick Facts
 
-## Mars
-![Our Sun](img/mars.jpg)
+Mass|7.3477 x 10<sup>22</sup> kg
+Diamiter|3,475 km|
+Gravity|0.166 x Earth|1.624 m/s<sup>2</sup>
+Escape Velocity|8640 km/h| 2.4 x 10<sup>3</sup> m/s
+Surface Temperature|-233/123 °C|40/396 K
+Axial Tilt|6.68 degrees|
+Mean Distance from Earth|384,400 km|0.00257 AU
+Mean Orbit Velocity|3,680.5 km/h|1,022 m/s
+Rotation Period|27.322 Earth Days|655.73 Hours
+Orbit Period|0.074803559 Earth Years|27.322 Earth Days
 
-### Description
+## Mars
+![Mars](img/mars.jpg)
 
 Mars is about half the size of Earth in diameter. Mars has a carbon dioxide atmosphere, but it is extremely thin. The thin air does not retain heat well, and surface temperatures range from a frigid -130ºC (-200ºF) on a cold winter night to 27ºC (80ºF) at the equator on a hot summer day. Mars has polar ice caps, made of water ice and carbon dioxide ice. The Martian surface has features that look like dry streambeds, leading many researchers to surmise that at some time in the distant past, Mars may have had liquid water flowing on its surface.
 
@@ -98,39 +163,31 @@ Mars is about half the size of Earth in diameter. Mars has a carbon dioxide atmo
 # Jovian Planets:
 
 ## Jupiter
-![Our Sun](img/jupiter.jpg)
-
-### Description
+![Jupiter](img/jupiter.jpg)
 
 ### Quick Facts
 
 ## Saturn
-![Our Sun](img/saturn2.jpg)
-
-### Description
+![Saturn](img/saturn2.jpg)
 
 ### Quick Facts
 
 ## Uranus
-![Our Sun](img/uranus.jpg)
-
-### Description
+![Uranus](img/uranus.jpg)
 
 ### Quick Facts
 
 ## Neptune
-![Our Sun](img/neptune.png)
-
-### Description
+![Neptune](img/neptune.png)
 
 ### Quick Facts
 
 
 # Additional Resources
 
-[Solar Flares](https://vimeo.com/124139626)
-
 [Earth at night as seen from ISS](https://vimeo.com/32001208)
+
+[Solar Flares](https://vimeo.com/124139626)
 
 [Earth 360 degrees](http://earth.plus360degrees.com/)
 
@@ -142,11 +199,10 @@ Mars is about half the size of Earth in diameter. Mars has a carbon dioxide atmo
 
 [NASA Eyes simulation](http://eyes.nasa.gov)
 
-<script>var iosDragDropShim = { enableEnterLeave: true }</script>
-
-## Quiz
+## Test Yourself
 Match the names with the images.
 
+<script>var iosDragDropShim = { enableEnterLeave: true }</script>
 <div id="dragScriptContainer">
     <div id="questionDiv">
         <div class="dragDropSmallBox" id="q1"><img src="img/250/sun.jpg" alt="Our Sun"></div>
