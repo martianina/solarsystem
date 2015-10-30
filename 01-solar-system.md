@@ -42,20 +42,18 @@ The Sun is at the center of the Solar System. The planets, asteroids and comets 
 
 ### Quick Facts
 
-Type|Star|
-
-<!-- Mass|4.8673 x 10<sup>24</sup> kg
-Diamiter|12,104 km|
-Gravity|8.87 m/s<sup>2</sup>|
-Escape Velocity|37,296 km/h|1.036 x 10<sup>4</sup> m/s
-Surface Temperature|462 °C|735 K
-Atmosphere|Carbon Dioxide, Nitrogen| CO<sub>2</sub>, N<sub>2</sub>
-Axial Tilt|0.007 degrees|
-No. of Moons|0|
-Mean Distance from Sun|108,209,475 km|0.72333566 AU
-Mean Orbit Velocity|126,074 km/h|3.5020 x 10<sup>4</sup> m/s
-Rotation Period|-243.018 Earth Days|-5832.4 Hours
-Orbit Period|1 Earth Years|365.2 Earth Days -->
+Type|Star|G2V
+Luminosity|3.83 x 10<sup>33</sup> ergs/sec|
+Visual Brightness (V)|-26.74|
+Absolute Magnitude|4.83|
+Composition|92.1% Hydrogen, 7.8% Helium|
+Temperature|5,504 °C|5777 K
+Mass|1.989 x 10<sup>30</sup> kg|333,060.402 x Earth
+Equatorial Radius|695,508 km|109.2 x Earth|
+Gravity|274.0 m/s<sup>2</sup>|
+Escape Velocity|2,223,720 km/h|6.177 x 10<sup>5</sup> m/s
+Mean Rotation Period|25.38 Earth Days|609.12 Hours
+Age|4.6 Billion Years|
 
 # Terrestrial Planets:
 
@@ -67,11 +65,12 @@ Mercury is the closest planet to the Sun and smallest of the terrestrial planets
 ### Quick Facts
 
 Type|Terrestrial|
-Mass|0.055 x Earth's|3.3010 x 10<sup>23</sup> kg
+Mass|3.3010 x 10<sup>23</sup> kg|0.055 x Earth
 Diamiter|4,879 km|
 Gravity|3.7 m/s<sup>2</sup>|
 Escape Velocity|15,300 km/h|4.25 x 10<sup>3</sup> m/s
-Surface Temperature|-173/427 (min/max) °C|100/700 (min/max) K
+Surface Temperature|-173 to + 427 °C|100 to 700 K
+Rotation Period|58.646 Earth Days|1407.5 Hours
 Atmosphere||
 Axial Tilt|0.01 degrees|
 Ring System?|No|
@@ -79,9 +78,8 @@ Global Magnetic Field?|Yes|
 No. of Moons|0|
 Mean Distance from Sun|57,909,227 km|0.38709927 AU
 Mean Orbit Velocity|170,503 km/h|4.7362 x 10<sup>4</sup> m/s
-Rotation Period|58.646 Earth Days|1407.5 Hours
-
-<!-- Orbit Period|1 Earth Years|365.2 Earth Days -->
+Orbital Inclination|7 degrees|
+Orbit Period|88 Earth Days|
 
 
 ## Venus
@@ -97,6 +95,7 @@ Diamiter|12,104 km|
 Gravity|8.87 m/s<sup>2</sup>|
 Escape Velocity|37,296 km/h|1.036 x 10<sup>4</sup> m/s
 Surface Temperature|462 °C|735 K
+Rotation Period|-243.018 Earth Days|-5832.4 Hours
 Atmosphere|Carbon Dioxide, Nitrogen| CO<sub>2</sub>, N<sub>2</sub>
 Axial Tilt|0.007 degrees|
 Ring System?|No|
@@ -104,9 +103,8 @@ Global Magnetic Field?|No|
 No. of Moons|0|
 Mean Distance from Sun|108,209,475 km|0.72333566 AU
 Mean Orbit Velocity|126,074 km/h|3.5020 x 10<sup>4</sup> m/s
-Rotation Period|-243.018 Earth Days|-5832.4 Hours
-
-<!-- Orbit Period|1 Earth Years|365.2 Earth Days -->
+Orbital Inclination|3.4 degrees|
+Orbit Period|224.7 Earth Days|
 
 ## Earth
 ![Earth](img/earth.jpg)
@@ -126,7 +124,8 @@ Mass|5.9722 x 10<sup>24</sup> kg
 Diamiter|12,756 km|
 Gravity|9.80665 m/s<sup>2</sup>|
 Escape Velocity|40,284 km/h|1.119 x 10<sup>4</sup> m/s
-Surface Temperature|-88/58 (min/max) °C|185/331 (min/max) K
+Surface Temperature|-88 to + 58 °C|185 to 331 K
+Rotation Period|0.99726968 Earth Days|23.934 Hours
 Atmosphere|Nitrogen, Oxygen| N<sub>2</sub>, O<sub>2</sub>
 Axial Tilt|23.4393 degrees|
 Ring System?|No|
@@ -134,7 +133,7 @@ Global Magnetic Field?|Yes|
 No. of Moons|1|
 Mean Distance from Sun|149,598,262 km|1 AU
 Mean Orbit Velocity|107,218 km/h|2.9783 x 10<sup>4</sup> m/s
-Rotation Period|0.99726968 Earth Days|23.934 Hours
+Orbital Inclination|0 degrees|
 Orbit Period|1 Earth Years|365.2 Earth Days
 
 ### The Moon
@@ -144,13 +143,14 @@ Orbit Period|1 Earth Years|365.2 Earth Days
 
 Mass|7.3477 x 10<sup>22</sup> kg
 Diamiter|3,475 km|
-Gravity|0.166 x Earth|1.624 m/s<sup>2</sup>
+Gravity|1.624 m/s<sup>2</sup>|0.166 x Earth
 Escape Velocity|8640 km/h| 2.4 x 10<sup>3</sup> m/s
-Surface Temperature|-233/123 °C|40/396 K
+Surface Temperature|-233 to +123 °C|40 to 396 K
+Rotation Period|27.322 Earth Days|655.73 Hours
 Axial Tilt|6.68 degrees|
 Mean Distance from Earth|384,400 km|0.00257 AU
 Mean Orbit Velocity|3,680.5 km/h|1,022 m/s
-Rotation Period|27.322 Earth Days|655.73 Hours
+Orbital Inclination|5.1 degrees|
 Orbit Period|0.074803559 Earth Years|27.322 Earth Days
 
 ## Mars
@@ -160,6 +160,23 @@ Mars is about half the size of Earth in diameter. Mars has a carbon dioxide atmo
 
 ### Quick Facts
 
+Type|Terrestrial|
+Mass|6.4169 x 10<sup>23</sup> kg
+Diamiter|6,792 km|
+Gravity|3.71 m/s<sup>2</sup>|
+Escape Velocity|18,108 km/h|5.030 x 10<sup>3</sup> m/s
+Surface Temperature|-153 to +20 °C|120 to 293 K
+Rotation Period|1.026 Earth Days|24.623 Hours
+Atmosphere|Carbon Dioxide, Nitrogen, Argon|CO<sub>2</sub>, N<sub>2</sub>, Ar
+Axial Tilt|25.2 degrees|
+Ring System?|No|
+Global Magnetic Field?|No|
+No. of Moons|2|
+Mean Distance from Sun|227,943,824 km|1.523662 AU
+Mean Orbit Velocity|86,677 km/h|2.4077 x 10<sup>4</sup> m/s
+Orbital Inclination|1.9 degrees|
+Orbit Period|687 Earth Days|
+
 # Jovian Planets:
 
 ## Jupiter
@@ -167,21 +184,90 @@ Mars is about half the size of Earth in diameter. Mars has a carbon dioxide atmo
 
 ### Quick Facts
 
+Type|Jovian|
+Mass|1.8981 x 10<sup>27</sup> kg
+Diamiter|142,984 km|
+Gravity|24.79 m/s<sup>2</sup>|
+Escape Velocity|216,720 km/h|6.020 x 10<sup>4</sup> m/s
+Temperature|-148 °C|125 K
+Rotation Period|0.41354 Earth Days|9.92496 Hours
+Atmosphere|Hydrogen, Helium|H<sub>2</sub>, He
+Axial Tilt|3.1 degrees|
+Ring System?|Yes|
+Global Magnetic Field?|Yes|
+No. of Moons|67|
+Mean Distance from Sun|778,340,821 km|5.2028870 AU
+Mean Orbit Velocity|47,002 km/h|1.3056 x 10<sup>4</sup> m/s
+Orbital Inclination|1.3 degrees|
+Orbit Period|4,331 Earth Days|
+
 ## Saturn
 ![Saturn](img/saturn2.jpg)
 
 ### Quick Facts
+
+Type|Jovian|
+Mass|5.6832 x 10<sup>26</sup> kg
+Diamiter|120,536 km|
+Gravity|<sup>\*</sup>10.4 m/s<sup>2</sup>|
+Escape Velocity|129,924 km/h|3.609 x 10<sup>4</sup> m/s
+Temperature|-178 °C|95 K
+Rotation Period|0.444 Earth Days|10.656 Hours
+Atmosphere|Hydrogen, Helium|H<sub>2</sub>, He
+Axial Tilt|26.7 degrees|
+Ring System?|Yes|
+Global Magnetic Field?|Yes|
+No. of Moons|62|
+Mean Distance from Sun|1,426,666,422 km|9.53667594 AU
+Mean Orbit Velocity|34,701 km/h|9.6391 x 10<sup>3</sup> m/s
+Orbital Inclination|2.5 degrees|
+Orbit Period|10,747 Earth Days|
+
+<small><sup>\*</sup> Derived from a 1 bar radius of 60,268 km.<small>
 
 ## Uranus
 ![Uranus](img/uranus.jpg)
 
 ### Quick Facts
 
+Type|Jovian|
+Mass|8.6810 x 10<sup>25</sup> kg
+Diamiter|51,118 km|
+Gravity|8.87 m/s<sup>2</sup>|
+Escape Velocity|76,968 km/h|2.138 x 10<sup>4</sup> m/s
+Temperature|-216 °C|57 K
+Rotation Period|-0.718 Earth Days|-17.23992 Hours
+Atmosphere|Hydrogen, Helium, Methane|H<sub>2</sub>, He,  CH<sub>4</sub>
+Axial Tilt|97.8 degrees|
+Ring System?|Yes|
+Global Magnetic Field?|Yes|
+No. of Moons|27|
+Mean Distance from Sun|2,870,658,186 km|19.189165 AU
+Mean Orbit Velocity|24,477 km/h|6.7991 x 10<sup>3</sup> m/s
+Orbital Inclination|0.8 degrees|
+Orbit Period|30,589 Earth Days|
+
 ## Neptune
 ![Neptune](img/neptune.png)
 
 ### Quick Facts
 
+Type|Jovian|
+Mass|1.0241 x 10<sup>26</sup> kg
+Diamiter|49,528 km|
+Gravity|11.15 m/s<sup>2</sup>|
+Escape Velocity|84,816 km/h|2.356 x 10<sup>4</sup> m/s
+Temperature|-214 °C|59 K
+Rotation Period|0.671 Earth Days|16.11000 Hours
+Atmosphere|Hydrogen, Helium, Methane|H<sub>2</sub>, He,  CH<sub>4</sub>
+Axial Tilt|28.3 degrees|
+Ring System?|Yes|
+Global Magnetic Field?|Yes|
+No. of Moons|14|
+Mean Distance from Sun|4,498,396,441 km|30.069923 AU
+Mean Orbit Velocity|19,566 km/h|5.4349 x 10<sup>3</sup> m/s
+Orbital Inclination|1.8 degrees|
+Orbit Period|59,800 Earth Days|
 
 # Additional Resources
 
