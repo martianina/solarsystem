@@ -204,26 +204,6 @@ Match the names with the images.
 
 <script>var iosDragDropShim = { enableEnterLeave: true }</script>
 <div id="dragScriptContainer">
-    <div id="questionDiv">
-        <div class="dragDropSmallBox" id="q1"><img src="img/250/sun.jpg" alt="Our Sun"></div>
-        <div class="destinationBox"></div>
-        <div class="dragDropSmallBox" id="q2"><img src="img/250/mercury.jpg" alt="Mercury"></div>
-        <div class="destinationBox"></div>
-        <div class="dragDropSmallBox" id="q3"><img src="img/250/venus.jpg" alt="Venus"></div>
-        <div class="destinationBox"></div>
-        <div class="dragDropSmallBox" id="q4"><img src="img/250/earth.jpg" alt="Earth"></div>
-        <div class="destinationBox"></div>
-        <div class="dragDropSmallBox" id="q5"><img src="img/250/mars.jpg" alt="Mars"></div>
-        <div class="destinationBox"></div>
-        <div class="dragDropSmallBox" id="q6"><img src="img/250/jupiter.jpg" alt="Jupiter"></div>
-        <div class="destinationBox"></div>
-        <div class="dragDropSmallBox" id="q7"><img src="img/250/saturn.jpg" alt="Saturn"></div>
-        <div class="destinationBox"></div>
-        <div class="dragDropSmallBox" id="q8"><img src="img/250/uranus.jpg" alt="Uranus"></div>
-        <div class="destinationBox"></div>
-        <div class="dragDropSmallBox" id="q9"><img src="img/250/neptune.jpg" alt="Neptune"></div>
-        <div class="destinationBox"></div>
-    </div>
     <div id="answerDiv">
         <div class="dragDropSmallBox" id="a1">Sun</div>
         <div class="dragDropSmallBox" id="a2">Mercury</div>
@@ -234,5 +214,43 @@ Match the names with the images.
         <div class="dragDropSmallBox" id="a7">Saturn</div>
         <div class="dragDropSmallBox" id="a8">Uranus</div>
         <div class="dragDropSmallBox" id="a9">Neptune</div>
+    </div>
+    <div id="questionDiv">
+        <div class="col">
+            <div class="dragDropSmallBox" id="q1"><img src="img/250/sun.jpg" alt="Our Sun"></div>
+            <div class="destinationBox"></div>
+        </div>
+        <div class="col">
+            <div class="dragDropSmallBox" id="q2"><img src="img/250/mercury.jpg" alt="Mercury"></div>
+            <div class="destinationBox"></div>
+        </div>
+        <div class="col">
+            <div class="dragDropSmallBox" id="q3"><img src="img/250/venus.jpg" alt="Venus"></div>
+            <div class="destinationBox"></div>
+        </div>
+        <div class="col">
+            <div class="dragDropSmallBox" id="q4"><img src="img/250/earth.jpg" alt="Earth"></div>
+            <div class="destinationBox"></div>
+        </div>
+        <div class="col">
+            <div class="dragDropSmallBox" id="q5"><img src="img/250/mars.jpg" alt="Mars"></div>
+            <div class="destinationBox"></div>
+        </div>
+        <div class="col">
+            <div class="dragDropSmallBox" id="q6"><img src="img/250/jupiter.jpg" alt="Jupiter"></div>
+            <div class="destinationBox"></div>
+        </div>
+        <div class="col">
+            <div class="dragDropSmallBox" id="q7"><img src="img/250/saturn.jpg" alt="Saturn"></div>
+            <div class="destinationBox"></div>
+        </div>
+        <div class="col">
+            <div class="dragDropSmallBox" id="q8"><img src="img/250/uranus.jpg" alt="Uranus"></div>
+            <div class="destinationBox"></div>
+        </div>
+        <div class="col">
+            <div class="dragDropSmallBox" id="q9"><img src="img/250/neptune.jpg" alt="Neptune"></div>
+            <div class="destinationBox"></div>
+        </div>
     </div>
 </div>

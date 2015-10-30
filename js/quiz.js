@@ -66,6 +66,11 @@ function dragDropQuiz () {
         addEvent(el, 'dragstart', function (e) {
             e.dataTransfer.effectAllowed = 'move';
             e.dataTransfer.setData('Text', this.id);
+            this.style.backgroundColor = '#999';
+        });
+
+        addEvent(el, 'dragend', function (e) {
+            this.style.backgroundColor = '';
         });
     }
 
@@ -118,10 +123,10 @@ function dragDropQuiz () {
     }
 
     addEvent(answerDiv, 'dragover', function (e) {
-            if (e.preventDefault) e.preventDefault();
-            e.dataTransfer.dropEffect = 'move';
-            return false;
-        });
+        if (e.preventDefault) e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+        return false;
+    });
 
     addEvent(answerDiv, 'dragenter', function (e) {
         this.classList.add('over');

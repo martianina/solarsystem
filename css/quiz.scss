@@ -5,93 +5,74 @@
 $height: 25px;
 $width: 200px;
 
-// #dragScriptContainer {
-    /* BIG DIV containing HTML needed for the entire script */
-    // width: 400px;
-    // margin: 0 auto;
-    // border: 1px solid #000;
-    // height: 400px;
-    // margin-top: 20px;
-    // padding: 3px;
-    // -moz-user-select: no;
-// }
-#questionDiv {
-    /* Big div for all the questions */
-    float: left;
-    height: 100%;
-    width: $width + 2;
-    // width: 74%;
-    border: 1px solid #aaa;
-    padding: 2px;
-}
-#answerDiv {
-    /* Big div for all the answers */
-    float: right;
-    height: 100%;
-    // width: 25%;
-    width: $width + 2;
-    border: 1px solid #aaa;
-    padding: 2px;
-}
-#questionDiv div,
-#answerDiv div,
-#dragContent div {
-    /* General rules for small divs - i.e. specific questions and answers */
-    width: $width;
-    height: $height;
-    line-height: $height;
-    float: left;
-    margin-right: 2px;
-    margin-bottom: 2px;
+#dragScriptContainer {
     text-align: center;
 }
-// #dragContent div {
-//     /* Drag content div - i.e. specific answers when they are beeing dragged */
-//     border: 1px solid #000;
-// }
-#answerDiv .dragDropSmallBox {
-    /* big answer divs */
-    border: 1px solid #000;
-    cursor: pointer;
-}
-#questionDiv .dragDropSmallBox {
-    /* big answer divs */
-    height: 100%;
+
+.dragDropSmallBox {
     width: $width;
-    border: 1px solid #000;
-    cursor: pointer;
-    // background-color: #e2ebed;
 }
-#questionDiv div div {
-    /* DIV after it has been dragged from right to left box */
-    margin: 0;
-    border: 0;
-    padding: 0;
-    background-color: #fff;
-}
-#questionDiv .destinationBox {
-    /* Small empty boxes for the questions - i.e. where answers could be dragged */
-    background-color: #fff;
+
+#answerDiv {
+    margin: 0 auto;
+    height: 252px;
     width: $width + 2;
-    height: $height;
-    margin-bottom: 20px;
+    border: 1px solid #aaa;
+    padding: 2px;
+
+    .dragDropSmallBox {
+        border: 1px solid #000;
+        cursor: pointer;
+        margin-right: 2px;
+        margin-bottom: 2px;
+    }
 }
-#questionDiv .correctAnswer {
-    /* CSS indicating correct answer */
-    background-color: green;
-    color: #fff;
-    border: 1px solid #000;
-    height: $height;
-}
-#questionDiv .wrongAnswer {
-    /* CSS indicating wrong answer */
-    background-color: red;
-    color: #fff;
-    border: 1px solid #000;
-    height: $height;
-}
-#dragContent div {
-    background-color: #fff;
+
+#questionDiv {
+    display: inline-block;
+
+    .col {
+        display: inline-block;
+        // http://stackoverflow.com/questions/9273016/why-is-this-inline-block-element-pushed-downward
+        vertical-align: top;
+        padding: 2px;
+    }
+
+    .dragDropSmallBox {
+        height: $width;
+        background-color: #000;
+        // vertical-align: middle;
+        // position: relative;
+    }
+
+    img {
+        max-height: 100%;
+        // position: absolute;
+        // top: 0;
+        // bottom: 0;
+        // margin: auto;
+    }
+
+    .destinationBox {
+        background-color: #fff;
+        width: $width;
+        height: $height;
+        margin-bottom: 20px;
+    }
+
+    .correctAnswer {
+        background-color: green;
+        color: #fff;
+        border: none;
+        height: $height;
+    }
+
+    .wrongAnswer {
+        background-color: red;
+        color: #fff;
+        border: none;
+        height: $height;
+    }
 }
 
 #questionDiv .destinationBox.over {
@@ -99,6 +80,5 @@ $width: 200px;
 }
 
 #answerDiv.over {
-    // border: 1px dashed #000;
     background-color: #777;
 }
