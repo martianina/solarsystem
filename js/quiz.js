@@ -88,8 +88,8 @@ function dragDropQuiz () {
         });
 
         addEvent(el, 'drop', function (e) {
-            if (e.stopPropagation) e.stopPropagation(); // stops the browser from redirecting...why???
-            if (e.preventDefault) e.preventDefault(); // Firefox ...
+            if (e.stopPropagation) e.stopPropagation();
+            if (e.preventDefault) e.preventDefault();
             var dragged = document.getElementById(e.dataTransfer.getData('Text'));
 
             this.classList.remove('over');
@@ -139,7 +139,6 @@ function dragDropQuiz () {
         textData.classList.remove('correctAnswer');
         textData.classList.remove('wrongAnswer');
         this.classList.remove('over');
-        textData.style.opacity = '1';
 
         this.appendChild(textData);
         return false;

@@ -2,7 +2,10 @@
 # Quiz
 ---
 
-#dragScriptContainer {
+$height: 25px;
+$width: 200px;
+
+// #dragScriptContainer {
     /* BIG DIV containing HTML needed for the entire script */
     // width: 400px;
     // margin: 0 auto;
@@ -11,12 +14,12 @@
     // margin-top: 20px;
     // padding: 3px;
     // -moz-user-select: no;
-}
+// }
 #questionDiv {
     /* Big div for all the questions */
     float: left;
     height: 100%;
-    width: 140px;
+    width: $width + 2;
     // width: 74%;
     border: 1px solid #aaa;
     padding: 2px;
@@ -26,7 +29,7 @@
     float: right;
     height: 100%;
     // width: 25%;
-    width: 67px;
+    width: $width + 2;
     border: 1px solid #aaa;
     padding: 2px;
 }
@@ -34,29 +37,30 @@
 #answerDiv div,
 #dragContent div {
     /* General rules for small divs - i.e. specific questions and answers */
-    width: 65px;
-    height: 20px;
-    line-height: 20px;
+    width: $width;
+    height: $height;
+    line-height: $height;
     float: left;
     margin-right: 2px;
     margin-bottom: 2px;
     text-align: center;
 }
-#dragContent div {
-    /* Drag content div - i.e. specific answers when they are beeing dragged */
-    border: 1px solid #000;
-}
+// #dragContent div {
+//     /* Drag content div - i.e. specific answers when they are beeing dragged */
+//     border: 1px solid #000;
+// }
 #answerDiv .dragDropSmallBox {
-    /* Small answer divs */
+    /* big answer divs */
     border: 1px solid #000;
     cursor: pointer;
 }
 #questionDiv .dragDropSmallBox {
-    /* Small answer divs */
+    /* big answer divs */
+    height: 100%;
+    width: $width;
     border: 1px solid #000;
     cursor: pointer;
-    background-color: #e2ebed;
-    /* Light blue background color */
+    // background-color: #e2ebed;
 }
 #questionDiv div div {
     /* DIV after it has been dragged from right to left box */
@@ -67,31 +71,34 @@
 }
 #questionDiv .destinationBox {
     /* Small empty boxes for the questions - i.e. where answers could be dragged */
-    border: 1px solid transparent;
-    background-color: #ddd;
-    width: 65px;
-    height: 20px;
+    background-color: #fff;
+    width: $width + 2;
+    height: $height;
+    margin-bottom: 20px;
 }
 #questionDiv .correctAnswer {
     /* CSS indicating correct answer */
     background-color: green;
     color: #fff;
     border: 1px solid #000;
+    height: $height;
 }
 #questionDiv .wrongAnswer {
     /* CSS indicating wrong answer */
     background-color: red;
     color: #fff;
     border: 1px solid #000;
+    height: $height;
 }
 #dragContent div {
     background-color: #fff;
 }
 
 #questionDiv .destinationBox.over {
-    border: 1px dashed #000;
+    background-color: #777;
 }
 
 #answerDiv.over {
-    border: 1px dashed #000;
+    // border: 1px dashed #000;
+    background-color: #777;
 }
