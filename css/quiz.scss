@@ -2,7 +2,7 @@
 # Quiz
 ---
 
-$height: 25px;
+$height: 30px;
 $width: 200px;
 
 #dragScriptContainer {
@@ -10,21 +10,23 @@ $width: 200px;
 }
 
 .dragDropSmallBox {
+    line-height: 2em;
     width: $width;
 }
 
 #answerDiv {
-    margin: 0 auto;
-    height: 252px;
-    width: $width + 2;
+    min-height: 28px;
     border: 1px solid #aaa;
     padding: 2px;
 
     .dragDropSmallBox {
+        display: inline-block;
         border: 1px solid #000;
         cursor: pointer;
         margin-right: 2px;
         margin-bottom: 2px;
+        width: 133px;
+        height: $height;
     }
 }
 
