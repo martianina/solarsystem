@@ -30,7 +30,13 @@ function shuffleDom (div, skip) {
 }
 
 
-function dragDropQuiz () {
+function dragDropQuiz (config) {
+    if (typeof config === 'undefined' || config === null) {
+        var config = {
+            trailMode: false,
+        };
+    }
+
     shuffleDom(answerDiv);
     shuffleDom(questionDiv, 2);
 
@@ -107,12 +113,15 @@ function dragDropQuiz () {
                 }
                 var answerId = dragged.id.replace(/[^0-9]/g,'');
                 var questionId = prev.id.replace(/[^0-9]/g,'');
-                dragged.classList.remove('correctAnswer');
-                dragged.classList.remove('wrongAnswer');
-                if (answerId === questionId){
-                    dragged.classList.add('correctAnswer');
-                } else {
-                    dragged.classList.add('wrongAnswer');
+
+                if (config.trailMode === true) {
+                    dragged.classList.remove('correctAnswer');
+                    dragged.classList.remove('wrongAnswer');
+                    if (answerId === questionId){
+                        dragged.classList.add('correctAnswer');
+                    } else {
+                        dragged.classList.add('wrongAnswer');
+                    }
                 }
 
                 e.target.appendChild(dragged);
@@ -150,4 +159,4 @@ function dragDropQuiz () {
     });
 }
 
-window.onload = dragDropQuiz;
+window.onload = dragDropQuiz(quizConfig);

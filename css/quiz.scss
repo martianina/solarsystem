@@ -61,20 +61,21 @@ $width: 200px;
         width: $width;
         height: $height;
         margin-bottom: 20px;
-    }
+        .dragDropSmallBox {
+            background-color: #444;
+            color: #fff;
+            border: none;
+            height: $height;
+        }
+        .correctAnswer {
+            color: #fff;
+            background-color: green;
+        }
 
-    .correctAnswer {
-        background-color: green;
-        color: #fff;
-        border: none;
-        height: $height;
-    }
-
-    .wrongAnswer {
-        background-color: red;
-        color: #fff;
-        border: none;
-        height: $height;
+        .wrongAnswer {
+            color: #fff;
+            background-color: red;
+        }
     }
 }
 

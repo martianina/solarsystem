@@ -10,9 +10,6 @@ js:
     - js/ios-drag-drop.js
     - js/quiz.js
 ---
-<style>
-
-</style>
 
 <small>Click on an object to jump to it:</small>
 <img src="img/solar-system.jpg" alt="The Solar System" usemap="#navigation" />
@@ -80,7 +77,6 @@ Mean Distance from Sun|57,909,227 km|0.38709927 AU
 Mean Orbit Velocity|170,503 km/h|4.7362 x 10<sup>4</sup> m/s
 Orbital Inclination|7 degrees|
 Orbit Period|88 Earth Days|
-
 
 ## Venus
 ![Venus](img/venus.png)
@@ -288,7 +284,12 @@ Orbit Period|59,800 Earth Days|
 ## Test Yourself
 Match the names with the images.
 
-<script>var iosDragDropShim = { enableEnterLeave: true }</script>
+<script>
+var quizConfig = {
+    trailMode: true,
+};
+var iosDragDropShim = { enableEnterLeave: true };
+</script>
 <div id="dragScriptContainer">
     <div id="answerDiv">
         <div class="dragDropSmallBox" id="a1">Sun</div>
