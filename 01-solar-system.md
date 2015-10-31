@@ -391,9 +391,11 @@ Orbit Period|59,800 Earth Days|
 Match the names with the images.
 
 <script>
-var quizConfig = {
-    trailMode: true,
-    alertResult: false,
+window.onload = function init() {
+    var quiz1 = new dragDropQuiz({
+        trailMode: true,
+        alertResult: false,
+    });
 };
 var iosDragDropShim = { enableEnterLeave: true };
 </script>

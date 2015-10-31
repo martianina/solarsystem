@@ -14,13 +14,12 @@ js:
 Match the names with the images.
 
 <script>
-var quizConfig = {
-    trailMode: false,
-    alertResult: true,
-    infoWrong: 'You can catch up on the Solar System <a href="/solar-system.html">here</a>.'
-};
 window.onload = function init() {
-    var quiz1 = new dragDropQuiz(quizConfig);
+    var quiz1 = new dragDropQuiz({
+        trailMode: false,
+        alertResult: true,
+        infoWrong: 'You can catch up on the Solar System <a href="/solar-system.html">here</a>.'
+    });
 };
 
 var iosDragDropShim = { enableEnterLeave: true };
@@ -79,3 +78,5 @@ var iosDragDropShim = { enableEnterLeave: true };
         </div>
     </div>
 </div>
+
+<hr>
