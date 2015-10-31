@@ -73,7 +73,7 @@ function dragDropQuiz (config) {
 
     this.answerDiv = document.getElementById(self.config.answerId);
     this.answerItems = document.querySelectorAll('#' + self.config.answerId + ' ' + self.config.answerItems);
-    this.destinationBox = document.querySelectorAll(self.config.destinationBox);
+    this.destinationBox = document.querySelectorAll('#' + self.config.questionId + ' '+ self.config.destinationBox);
 
     shuffleDom(self.answerDiv);
     shuffleDom(document.getElementById(self.config.questionId), 2);

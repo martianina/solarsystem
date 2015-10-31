@@ -14,7 +14,7 @@ $width: 130px; // 200px
     width: $width;
 }
 
-#answerDiv {
+#answerDiv, #answerDiv1, #answerDiv2 {
     min-height: 28px;
     border: 1px solid #aaa;
     padding: 2px;
@@ -30,7 +30,7 @@ $width: 130px; // 200px
     }
 }
 
-#questionDiv {
+#questionDiv, #questionDiv1, #questionDiv2 {
     display: inline-block;
 
     .col {
