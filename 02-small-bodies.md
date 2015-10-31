@@ -11,7 +11,6 @@ function toggleSound(el) {
     var found = false;
     while (found === false) {
         audioElem = audioElem.nextSibling;
-        <!-- console.log('tag', audioElem.tagName); -->
         if (audioElem.tagName === "AUDIO") {
             found = true;
         }
