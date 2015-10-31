@@ -68,12 +68,12 @@ function dragDropQuiz (config) {
         answerId: config.answerId || 'answerDiv',
         questionId: config.questionId || 'questionDiv',
         answerItems: config.answerItems || '.dragDropSmallBox',
-        destinationBox: config.destinationBox || '.destinationBox',
+        destinationClass: config.destinationClass || 'destinationBox',
     };
 
     this.answerDiv = document.getElementById(self.config.answerId);
     this.answerItems = document.querySelectorAll('#' + self.config.answerId + ' ' + self.config.answerItems);
-    this.destinationBox = document.querySelectorAll('#' + self.config.questionId + ' '+ self.config.destinationBox);
+    this.destinationBox = document.querySelectorAll('#' + self.config.questionId + ' .'+ self.config.destinationClass);
 
     shuffleDom(self.answerDiv);
     shuffleDom(document.getElementById(self.config.questionId), 2);
@@ -122,7 +122,7 @@ function dragDropQuiz (config) {
 
             this.classList.remove('over');
 
-            if (e.target.className === 'destinationBox')
+            if (e.target.className === self.config.destinationClass)
             {
                 var prev = this.previousSibling;
                 while(prev && prev.nodeType != 1) {
