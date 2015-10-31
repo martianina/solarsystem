@@ -75,6 +75,7 @@ function dragDropQuiz (config) {
 
         addEvent(ela, 'dragstart', function (e) {
             e.dataTransfer.effectAllowed = 'move';
+            e.dataTransfer.dropEffect = 'move';
             e.dataTransfer.setData('Text', this.id);
             this.style.backgroundColor = '#999';
         });

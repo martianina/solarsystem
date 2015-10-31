@@ -102,11 +102,15 @@ $width: 130px; // 200px
     text-align: center;
     z-index: 100;
     background-color: rgba(0,0,0,.3);
-}
 
-#overlay div {
-    margin: 128px auto;
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
+    div {
+        margin: 128px auto;
+        background-color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    #result {
+        box-shadow: #333 0 0 10px;
+    }
 }

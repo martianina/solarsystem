@@ -18,7 +18,7 @@ window.onload = function init() {
     var quiz1 = new dragDropQuiz({
         trailMode: false,
         alertResult: true,
-        infoWrong: 'You can catch up on the Solar System <a href="/solar-system.html">here</a>.'
+        infoWrong: 'You can catch up on the Solar System <a href="/solar-system.html">here</a>.',
     });
 };
 
