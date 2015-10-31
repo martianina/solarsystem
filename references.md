@@ -20,7 +20,7 @@ group: navigation
 
 [answers.goocreate.com/questions/3595/can-i-draw-2d-text-in-the-3d-scene.html](https://answers.goocreate.com/questions/3595/can-i-draw-2d-text-in-the-3d-scene.html)
 
-### Data & Facts
+### Data, Text & Facts
 [stackoverflow.com/questions/11363170/units-of-three-js-calculating-rotation-orbit-speeds](http://stackoverflow.com/questions/11363170/units-of-three-js-calculating-rotation-orbit-speeds)
 
 [nssdc.gsfc.nasa.gov/planetary/factsheet](http://nssdc.gsfc.nasa.gov/planetary/factsheet/)
@@ -66,7 +66,7 @@ Jekyll base theme: [github.com/jglovier/jekyll-new](https://github.com/jglovier/
 
 [space-facts.com/transparent-planet-pictures/](http://space-facts.com/transparent-planet-pictures/)
 
-[nasa.gov/image-feature/global-mosaic-of-pluto-in-true-color/](http://www.nasa.gov/image-feature/global-mosaic-of-pluto-in-true-color/) ->
+[nasa.gov/image-feature/global-mosaic-of-pluto-in-true-color/](http://www.nasa.gov/image-feature/global-mosaic-of-pluto-in-true-color/)
  <!-- [solarsystem.nasa.gov/galleries/the-rich-color-variations-of-pluto](http://solarsystem.nasa.gov/galleries/the-rich-color-variations-of-pluto) -->
 
 [nasa.gov/mission_pages/sunearth/news/gallery/20130620-m2.9flare.html](http://www.nasa.gov/mission_pages/sunearth/news/gallery/20130620-m2.9flare.html)
@@ -83,10 +83,20 @@ Jekyll base theme: [github.com/jglovier/jekyll-new](https://github.com/jglovier/
 
 [nasa.gov](https://www.nasa.gov)
 
-## Lesson Information
+## Lesson Information and Text
 
 [messenger-education.org/teachers/Modules/Lessons/ourss.pdf](http://www.messenger-education.org/teachers/Modules/Lessons/ourss.pdf)
 
 ## Library
 [github.com/davidjbradshaw/image-map-resizer](https://github.com/davidjbradshaw/image-map-resizer)
 
+## Text to Speech by Flite
+[festvox.org/flite/](http://www.festvox.org/flite/) -> [demos](http://tts.speech.cs.cmu.edu:8083)
+
+Voice used: cmu_us_rms.flitevox
+
+Command used: `flite -voice ~/Downloads/voice/cmu_us_rms.flitevox -v -o out.wav -t 'text2speech'`
+
+### Icon
+
+[commons.wikimedia.org/wiki/File:Speaker_Icon.svg](https://commons.wikimedia.org/wiki/File:Speaker_Icon.svg)

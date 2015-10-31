@@ -58,3 +58,5 @@ Auditorial    | Voice over of the description and facts
 | Content                        | Solar System, Planets and Moons, Comets & Asteroids, Stars, Kuiper Belt |
 | Content Design                 |[![Concept Flowchart](img/flowchart.png)](img/flowchart.png) |
 | Design of the Learning Process | There learner will have the ability to explore the solar system using a simulation. Once finished exploring the student can read and look at images about the solar system, planets, moons, sun, comments and asteroids, in that order. After reading about celestial objects a small drag & drop quiz is available. After the quiz the student can re model the solar system using drag & drop. Finally at the end there is an exam that the user must complete. |
+
+I am using the 'Whole to part' sequence method to structure the learning path.
