@@ -16,9 +16,18 @@ Match the names with the images.
 <script>
 var quizConfig = {
     trailMode: false,
+    alertResult: true,
+    infoWrong: 'You can catch up on the Solar System <a href="/solar-system.html">here</a>.'
 };
+window.onload = function init() {
+    var quiz1 = new dragDropQuiz(quizConfig);
+};
+
 var iosDragDropShim = { enableEnterLeave: true };
 </script>
+
+<div id="overlay" onclick='showNotice()'></div>
+
 <div id="dragScriptContainer">
     <div id="answerDiv">
         <div class="dragDropSmallBox" id="a1">Sun</div>

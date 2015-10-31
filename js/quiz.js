@@ -1,6 +1,10 @@
-var answerDiv = document.getElementById('answerDiv');
-var answerItems = document.querySelectorAll('#answerDiv .dragDropSmallBox');
-var destinationBox = document.querySelectorAll('.destinationBox');
+function showNotice(data) {
+    el = document.getElementById("overlay");
+	result = document.getElementById("result");
+    data = "<div id='result'>" + data + "</div>";
+    el.innerHTML = data;
+	el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+}
 
 // Jonas Raoni Soares Silva
 // http://jsfromhell.com/array/shuffle [rev. #1]
@@ -29,45 +33,58 @@ function shuffleDom (div, skip) {
     }
 }
 
+var addEvent = (function () {
+  if (document.addEventListener) {
+    return function (el, type, fn) {
+      if (el && el.nodeName || el === window) {
+        el.addEventListener(type, fn, false);
+      } else if (el && el.length) {
+        for (var i = 0; i < el.length; i++) {
+          addEvent(el[i], type, fn);
+        }
+      }
+    };
+  } else {
+    return function (el, type, fn) {
+      if (el && el.nodeName || el === window) {
+        el.attachEvent('on' + type, function () { return fn.call(el, window.event); });
+      } else if (el && el.length) {
+        for (var i = 0; i < el.length; i++) {
+          addEvent(el[i], type, fn);
+        }
+      }
+    };
+  }
+})();
 
 function dragDropQuiz (config) {
-    if (typeof config === 'undefined' || config === null) {
-        var config = {
-            trailMode: false,
-        };
-    }
+    var self = this;
+    this.numOfQuestions = 0;
+    this.numAnswerd = 0;
+    this.config = {
+        trailMode: config.trailMode || false,
+        alertResult: config.alertResult || true,
+        infoWrong: config.infoWrong || '',
+        answerId: config.answerId || 'answerDiv',
+        questionId: config.questionId || 'questionDiv',
+        answerItems: config.answerItems || '.dragDropSmallBox',
+        destinationBox: config.destinationBox || '.destinationBox',
+    };
 
-    shuffleDom(answerDiv);
-    shuffleDom(questionDiv, 2);
+    this.answerDiv = document.getElementById(self.config.answerId);
+    this.answerItems = document.querySelectorAll('#' + self.config.answerId + ' ' + self.config.answerItems);
+    this.destinationBox = document.querySelectorAll(self.config.destinationBox);
 
-    var addEvent = (function () {
-      if (document.addEventListener) {
-        return function (el, type, fn) {
-          if (el && el.nodeName || el === window) {
-            el.addEventListener(type, fn, false);
-          } else if (el && el.length) {
-            for (var i = 0; i < el.length; i++) {
-              addEvent(el[i], type, fn);
-            }
-          }
-        };
-      } else {
-        return function (el, type, fn) {
-          if (el && el.nodeName || el === window) {
-            el.attachEvent('on' + type, function () { return fn.call(el, window.event); });
-          } else if (el && el.length) {
-            for (var i = 0; i < el.length; i++) {
-              addEvent(el[i], type, fn);
-            }
-          }
-        };
-      }
-    })();
+    shuffleDom(self.answerDiv);
+    shuffleDom(document.getElementById(self.config.questionId), 2);
 
-    for (var i = 0; i < answerItems.length; i++) {
-        var el = answerItems[i];
+    for (var i = 0; i < self.answerItems.length; i++) {
+        var el = self.answerItems[i];
 
         el.setAttribute('draggable', 'true');
+        el.correctAnswer = false;
+        el.answerd = false;
+        self.numOfQuestions++;
 
         addEvent(el, 'dragstart', function (e) {
             e.dataTransfer.effectAllowed = 'move';
@@ -80,8 +97,8 @@ function dragDropQuiz (config) {
         });
     }
 
-    for (var j = 0; j < destinationBox.length; j++) {
-        var el = destinationBox[j];
+    for (var j = 0; j < self.destinationBox.length; j++) {
+        var el = self.destinationBox[j];
 
         addEvent(el, 'dragover', function (e) {
             if (e.preventDefault) e.preventDefault();
@@ -114,49 +131,85 @@ function dragDropQuiz (config) {
                 var answerId = dragged.id.replace(/[^0-9]/g,'');
                 var questionId = prev.id.replace(/[^0-9]/g,'');
 
-                if (config.trailMode === true) {
+                // show correct awnsers imediatly
+                if (self.config.trailMode === true) {
                     dragged.classList.remove('correctAnswer');
                     dragged.classList.remove('wrongAnswer');
-                    if (answerId === questionId){
+                    if (answerId === questionId) {
                         dragged.classList.add('correctAnswer');
                     } else {
                         dragged.classList.add('wrongAnswer');
                     }
                 }
-
                 e.target.appendChild(dragged);
+
+                // show results when done
+                if(self.config.alertResult === true) {
+                    // console.log('answerd?', dragged.answerd);
+                    if (answerId === questionId) {
+                        dragged.correctAnswer = true;
+                    } else {
+                        dragged.correctAnswer = false;
+                    }
+
+                    // if already answerd don't do anything
+                    if (dragged.answerd === false) {
+                        self.numAnswerd++;
+                        dragged.answerd = true;
+                    }
+
+                    // when all questions are awnsered show results
+                    // console.log(self.numAnswerd + '=' + self.numOfQuestions);
+                    if (self.numOfQuestions === self.numAnswerd)
+                    {
+                        var correct = 0;
+                        for (var i = 0; i < self.answerItems.length; i++) {
+                            if (self.answerItems[i].correctAnswer === true) {
+                                correct++;
+                            }
+                        }
+                        if (correct <= self.numOfQuestions/2) {
+                            showNotice('<p>You got ' + correct + ' out of ' + self.numOfQuestions + ' correct!</br>' + self.config.infoWrong + '</p>');
+                        } else {
+                            showNotice('<p>Congratulations! You got ' + correct + ' out of ' + self.numOfQuestions + ' correct!</p>');
+                        }
+                    }
+                }
             }
 
             return false;
         });
     }
 
-    addEvent(answerDiv, 'dragover', function (e) {
+    addEvent(self.answerDiv, 'dragover', function (e) {
         if (e.preventDefault) e.preventDefault();
         e.dataTransfer.dropEffect = 'move';
         return false;
     });
 
-    addEvent(answerDiv, 'dragenter', function (e) {
+    addEvent(self.answerDiv, 'dragenter', function (e) {
         this.classList.add('over');
         return false;
     });
 
-    addEvent(answerDiv, 'dragleave', function () {
+    addEvent(self.answerDiv, 'dragleave', function () {
         this.classList.remove('over');
     });
 
-    addEvent(answerDiv, 'drop', function (e) {
+    addEvent(self.answerDiv, 'drop', function (e) {
         if (e.stopPropagation) e.stopPropagation();
         if (e.preventDefault) e.preventDefault();
         var textData = document.getElementById(e.dataTransfer.getData('Text'));
         textData.classList.remove('correctAnswer');
         textData.classList.remove('wrongAnswer');
         this.classList.remove('over');
-
         this.appendChild(textData);
+
+        textData.answerd = false;
+        self.numAnswerd--;
+
         return false;
     });
 }
 
-window.onload = dragDropQuiz(quizConfig);
+// window.onload = dragDropQuiz(quizConfig);

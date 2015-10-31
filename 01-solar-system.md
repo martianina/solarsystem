@@ -393,6 +393,7 @@ Match the names with the images.
 <script>
 var quizConfig = {
     trailMode: true,
+    alertResult: false,
 };
 var iosDragDropShim = { enableEnterLeave: true };
 </script>
