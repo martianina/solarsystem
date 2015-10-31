@@ -1,4 +1,4 @@
-function showNotice(data) {
+function showNotice (data) {
     el = document.getElementById("overlay");
 	result = document.getElementById("result");
     data = "<div id='result'>" + data + "</div>";
@@ -8,10 +8,10 @@ function showNotice(data) {
 
 // Jonas Raoni Soares Silva
 // http://jsfromhell.com/array/shuffle [rev. #1]
-shuffle = function(v){
+function shuffle (v) {
     for(var j, x, i = v.length; i; j = parseInt(Math.random() * i), x = v[--i], v[i] = v[j], v[j] = x);
     return v;
-};
+}
 
 function shuffleDom (div, skip) {
     if (skip === undefined) {
@@ -33,29 +33,16 @@ function shuffleDom (div, skip) {
     }
 }
 
-var addEvent = (function () {
-  if (document.addEventListener) {
-    return function (el, type, fn) {
-      if (el && el.nodeName || el === window) {
-        el.addEventListener(type, fn, false);
-      } else if (el && el.length) {
-        for (var i = 0; i < el.length; i++) {
-          addEvent(el[i], type, fn);
-        }
-      }
-    };
-  } else {
-    return function (el, type, fn) {
-      if (el && el.nodeName || el === window) {
-        el.attachEvent('on' + type, function () { return fn.call(el, window.event); });
-      } else if (el && el.length) {
-        for (var i = 0; i < el.length; i++) {
-          addEvent(el[i], type, fn);
-        }
-      }
-    };
-  }
-})();
+// http://code.tutsplus.com/tutorials/the-basics-of-object-oriented-javascript--net-7670
+function addEvent (to, type, fn) {
+    if (document.addEventListener) {
+        to.addEventListener(type, fn, false);
+    } else if (document.attachEvent) {
+        to.attachEvent('on'+type, fn);
+    } else {
+        to['on'+type] = fn;
+    }
+}
 
 function dragDropQuiz (config) {
     var self = this;
@@ -86,13 +73,13 @@ function dragDropQuiz (config) {
         el.answerd = false;
         self.numOfQuestions++;
 
-        addEvent(el, 'dragstart', function (e) {
+        addEvent(ela, 'dragstart', function (e) {
             e.dataTransfer.effectAllowed = 'move';
             e.dataTransfer.setData('Text', this.id);
             this.style.backgroundColor = '#999';
         });
 
-        addEvent(el, 'dragend', function (e) {
+        addEvent(ela, 'dragend', function (e) {
             this.style.backgroundColor = '';
         });
     }
@@ -192,7 +179,7 @@ function dragDropQuiz (config) {
         return false;
     });
 
-    addEvent(self.answerDiv, 'dragleave', function () {
+    addEvent(self.answerDiv, 'dragleave', function (e) {
         this.classList.remove('over');
     });
 
