@@ -50,7 +50,7 @@ Asteroids are small rocky objects in the Solar System. They orbit the Sun like p
 
 <img class="player" src="img/speaker-icon.png" alt="Click to play sound" onclick="toggleSound(this)" width="30" height="30">
 <audio class="audio">
-  <source src="speech/meteor.wav" type="audio/wav">
+  <source src="speech/meteors.wav" type="audio/wav">
 Your browser does not support this audio format (wav).
 </audio>
 
