@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.5.6 Metadata document-->
+<!--Spawned from the Reload Metadata Generator - http://www.reload.ac.uk-->
+<lom xmlns="http://www.imsglobal.org/xsd/imsmd_v1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p4.xsd">
+  <general>
+    <title>
+      <langstring xml:lang="en">Solar System</langstring>
+    </title>
+    <catalogentry>
+      <catalog />
+      <entry>
+        <langstring xml:lang="en" />
+      </entry>
+    </catalogentry>
+    <language>en-AU</language>
+    <description>
+      <langstring xml:lang="en">Learn about the Solar System</langstring>
+    </description>
+    <keyword>
+      <langstring xml:lang="en">'solar system', 'moons', 'sun', 'stars', 'planets', 'asteroids', 'comets'</langstring>
+    </keyword>
+    <structure>
+      <source>
+        <langstring xml:lang="en">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="en" />
+      </value>
+    </structure>
+    <aggregationlevel>
+      <source>
+        <langstring xml:lang="en">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="en">2</langstring>
+      </value>
+    </aggregationlevel>
+  </general>
+  <lifecycle>
+    <version>
+      <langstring xml:lang="en">0.1</langstring>
+    </version>
+    <status>
+      <source>
+        <langstring xml:lang="en">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="en">Draft</langstring>
+      </value>
+    </status>
+    <contribute>
+      <role>
+        <source>
+          <langstring xml:lang="en">LOMv1.0</langstring>
+        </source>
+        <value>
+          <langstring xml:lang="en">Author</langstring>
+        </value>
+      </role>
+      <centity>
+        <vcard>Sebastian Schmidt</vcard>
+      </centity>
+      <date>
+        <datetime>2015-10-31</datetime>
+      </date>
+    </contribute>
+  </lifecycle>
+  <metametadata>
+    <identifier />
+    <catalogentry>
+      <catalog />
+      <entry>
+        <langstring xml:lang="en" />
+      </entry>
+    </catalogentry>
+    <metadatascheme />
+    <language>en-AU</language>
+  </metametadata>
+  <technical>
+    <format>text/html</format>
+    <size>1</size>
+    <location>https://publicarray.github.io/solarsystem/</location>
+    <requirement>
+      <type>
+        <source>
+          <langstring xml:lang="en">LOMv1.0</langstring>
+        </source>
+        <value>
+          <langstring xml:lang="en">Browser</langstring>
+        </value>
+      </type>
+      <name>
+        <source>
+          <langstring xml:lang="en">LOMv1.0</langstring>
+        </source>
+        <value>
+          <langstring xml:lang="en">Any</langstring>
+        </value>
+      </name>
+    </requirement>
+    <otherplatformrequirements>
+      <langstring xml:lang="en">WebGL support</langstring>
+    </otherplatformrequirements>
+    <duration>
+      <datetime>2 hours</datetime>
+    </duration>
+  </technical>
+  <educational>
+    <interactivitytype>
+      <source>
+        <langstring xml:lang="en">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="en" />
+      </value>
+    </interactivitytype>
+    <learningresourcetype>
+      <source>
+        <langstring xml:lang="en">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="en">Simulation</langstring>
+      </value>
+    </learningresourcetype>
+    <interactivitylevel>
+      <source>
+        <langstring xml:lang="en">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="en" />
+      </value>
+    </interactivitylevel>
+    <intendedenduserrole>
+      <source>
+        <langstring xml:lang="en">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="en">Learner</langstring>
+      </value>
+    </intendedenduserrole>
+    <context>
+      <source>
+        <langstring xml:lang="en">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="en">Primary Education</langstring>
+      </value>
+    </context>
+    <typicalagerange>
+      <langstring xml:lang="en">10-13</langstring>
+    </typicalagerange>
+    <difficulty>
+      <source>
+        <langstring xml:lang="en">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="en" />
+      </value>
+    </difficulty>
+    <typicallearningtime>
+      <datetime>2 hours</datetime>
+    </typicallearningtime>
+    <description>
+      <langstring xml:lang="en">This learning object is intended to be used by primary students to learn about the solar system</langstring>
+    </description>
+    <language />
+  </educational>
+  <rights>
+    <cost>
+      <source>
+        <langstring xml:lang="en">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="en">no</langstring>
+      </value>
+    </cost>
+    <copyrightandotherrestrictions>
+      <source>
+        <langstring xml:lang="en">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="en">yes</langstring>
+      </value>
+    </copyrightandotherrestrictions>
+    <description>
+      <langstring xml:lang="en">See: https://publicarray.github.io/solarsystem/references.html</langstring>
+    </description>
+  </rights>
+  <relation>
+    <kind>
+      <source>
+        <langstring xml:lang="en">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="en" />
+      </value>
+    </kind>
+    <resource>
+      <description>
+        <langstring xml:lang="en" />
+      </description>
+      <catalogentry>
+        <catalog />
+        <entry>
+          <langstring xml:lang="en" />
+        </entry>
+      </catalogentry>
+    </resource>
+  </relation>
+  <classification>
+    <purpose>
+      <source>
+        <langstring xml:lang="en">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="en" />
+      </value>
+    </purpose>
+    <taxonpath>
+      <source>
+        <langstring xml:lang="en" />
+      </source>
+      <taxon>
+        <id />
+        <entry>
+          <langstring xml:lang="en" />
+        </entry>
+      </taxon>
+    </taxonpath>
+  </classification>
+</lom>
+

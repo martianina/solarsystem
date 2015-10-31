@@ -51,7 +51,7 @@ function toggleSound(el) {
 <img class="player" src="img/speaker-icon.png" alt="Click to play sound" onclick="toggleSound(this)" width="30" height="30">
 <audio class="audio">
   <source src="speech/solarsystem.wav" type="audio/wav">
-Your browser does not support this audio format.
+Your browser does not support this audio format (wav).
 </audio>
 
 There are two basic types of planets, Earth-like ("terrestrial") planets and Jupiter-like ("Jovian") planets. The terrestrial planets are Mercury, Venus, Earth and Mars. They are small, dense, rocky worlds. They are located in the inner part of the Solar System, they have solid surfaces, just a couple moons at most, rotate slowly, and have no rings around them.
