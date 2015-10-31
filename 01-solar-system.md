@@ -10,6 +10,24 @@ js:
     - js/ios-drag-drop.js
     - js/quiz.js
 ---
+<script>
+function toggleSound(el) {
+    var audioElem = el;
+    var found = false;
+    while (found === false) {
+        audioElem = audioElem.nextSibling;
+        <!-- console.log('tag', audioElem.tagName); -->
+        if (audioElem.tagName === "AUDIO") {
+            found = true;
+        }
+    }
+
+    if (audioElem.paused || audioElem.paused)
+        audioElem.play();
+    else
+        audioElem.pause();
+}
+</script>
 
 <small>Click on an object to jump to it:</small>
 <img src="img/solar-system.jpg" alt="The Solar System" usemap="#navigation" />
@@ -25,8 +43,16 @@ js:
     <area shape="rect" coords="1060,220,1350,420" href="#saturn" title="Saturn" alt="Saturn" />
     <area shape="circle" coords="1500,315,98" href="#uranus" title="Uranus" alt="Uranus" />
     <area shape="circle" coords="1710,315,74" href="#neptune" title="Neptune" alt="Neptune" />
-    <area shape="default" nohref="nohref"/>
+    <area shape="default" alt="The Solar System"/>
 </map>
+
+<!-- <img class="player" scr="img/speaker_icon.svg" alt="Click to play sound" onclick="toggleSound(this)"> -->
+
+<img class="player" src="img/speaker-icon.png" alt="Click to play sound" onclick="toggleSound(this)" width="30" height="30">
+<audio class="audio">
+  <source src="speech/solarsystem.wav" type="audio/wav">
+Your browser does not support this audio format.
+</audio>
 
 There are two basic types of planets, Earth-like ("terrestrial") planets and Jupiter-like ("Jovian") planets. The terrestrial planets are Mercury, Venus, Earth and Mars. They are small, dense, rocky worlds. They are located in the inner part of the Solar System, they have solid surfaces, just a couple moons at most, rotate slowly, and have no rings around them.
 

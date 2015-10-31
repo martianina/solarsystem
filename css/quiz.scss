@@ -60,13 +60,15 @@ $width: 200px;
         background-color: #fff;
         width: $width;
         height: $height;
-        margin-bottom: 20px;
+        margin-bottom: 8px;
+
         .dragDropSmallBox {
             background-color: #444;
             color: #fff;
             border: none;
             height: $height;
         }
+
         .correctAnswer {
             color: #fff;
             background-color: green;
