@@ -66,11 +66,10 @@ function dragDropQuiz (config) {
     shuffleDom(document.getElementById(self.config.questionId), 2);
 
     for (var i = 0; i < self.answerItems.length; i++) {
-        var el = self.answerItems[i];
-
-        el.setAttribute('draggable', 'true');
-        el.correctAnswer = false;
-        el.answerd = false;
+        var ela = self.answerItems[i];
+        ela.setAttribute('draggable', 'true');
+        ela.correctAnswer = false;
+        ela.answerd = false;
         self.numOfQuestions++;
 
         addEvent(ela, 'dragstart', function (e) {

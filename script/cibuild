@@ -2,4 +2,4 @@
 set -e # halt script on error
 
 bundle exec jekyll build --config _config_test.yml
-bundle exec htmlproof ./_site --check-html --disable-external --href-ignore "#" --file-ignore "/goocreate/0.15.6/"
+bundle exec htmlproof ./_site --check-html --disable-external --ignore_script_embeds --href-ignore "#" --file-ignore "/goocreate/0.15.6/"
