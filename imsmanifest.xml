@@ -102,7 +102,7 @@
       <langstring xml:lang="en">WebGL support</langstring>
     </otherplatformrequirements>
     <duration>
-      <datetime>2 hours</datetime>
+      <datetime>1 hour</datetime>
     </duration>
   </technical>
   <educational>
@@ -229,4 +229,3 @@
     </taxonpath>
   </classification>
 </lom>
-
