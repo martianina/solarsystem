@@ -3,7 +3,7 @@ function showNotice (data) {
 	result = document.getElementById("result");
     data = "<div id='result'>" + data + "</div>";
     el.innerHTML = data;
-	el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+	el.style.visibility = (el.style.visibility === "visible") ? "hidden" : "visible";
 }
 
 // Jonas Raoni Soares Silva

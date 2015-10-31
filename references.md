@@ -81,6 +81,8 @@ Jekyll base theme: [github.com/jglovier/jekyll-new](https://github.com/jglovier/
 
 [commons.wikimedia.org/wiki/File:Star_life_cycles_red_dwarf_en.svg](https://commons.wikimedia.org/wiki/File:Star_life_cycles_red_dwarf_en.svg)
 
+[commons.wikimedia.org/wiki/File:EightTNOs.jpg](https://commons.wikimedia.org/wiki/File:EightTNOs.jpg)
+
 [nasa.gov](https://www.nasa.gov)
 
 ## Lesson Information and Text
