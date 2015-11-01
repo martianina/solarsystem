@@ -54,8 +54,8 @@ function dragDropQuiz (config) {
         trailMode: config.trailMode || false,
         alertResult: config.alertResult || true,
         infoWrong: config.infoWrong || '',
-        answerId: config.answerId || 'answerDiv',
-        questionId: config.questionId || 'questionDiv',
+        answerId: config.answerId || 'answerDiv', // needs to be unique
+        questionId: config.questionId || 'questionDiv', // needs to be unique
         answerItems: config.answerItems || '.dragDropSmallBox',
         destinationClass: config.destinationClass || 'destinationBox',
     };
@@ -70,6 +70,7 @@ function dragDropQuiz (config) {
     for (var i = 0; i < self.answerItems.length; i++) {
         var ela = self.answerItems[i];
         ela.setAttribute('draggable', 'true');
+        ela.id = config.answerId+'-'+(i+1); // create unique id's
         ela.questionId = self.config.questionId;
         ela.answerId = self.config.answerId;
         ela.correctAnswer = false;
@@ -79,7 +80,7 @@ function dragDropQuiz (config) {
 
         self.addEvent(ela, 'dragstart', function (e) {
             e.dataTransfer.effectAllowed = 'move';
-            e.dataTransfer.setData('Text', this.id);
+            e.dataTransfer.setData('text/plain', this.id);
             this.style.backgroundColor = '#999';
         });
 
@@ -91,7 +92,6 @@ function dragDropQuiz (config) {
     for (var j = 0; j < self.destinationBox.length; j++) {
         var el = self.destinationBox[j];
         el.questionId = self.config.questionId;
-        el.answerId = self.config.answerId;
         el.questionNum = j+1;
 
         self.addEvent(el, 'dragover', function (e) {
@@ -112,31 +112,28 @@ function dragDropQuiz (config) {
         self.addEvent(el, 'drop', function (e) {
             if (e.stopPropagation) e.stopPropagation();
             if (e.preventDefault) e.preventDefault();
-            var dragged = document.getElementById(e.dataTransfer.getData('Text'));
 
             this.classList.remove('over');
+            var dragged = document.getElementById(e.dataTransfer.getData('text/plain'));
 
-            if (dragged.questionId === this.parentNode.parentNode.id) //&& e.target.className === self.config.destinationClass)
+            // this.questionId === this.parentNode.parentNode.id
+            if (dragged !== null && dragged.questionId === this.questionId && e.target.className === self.config.destinationClass)
             {
-                var answerId = dragged.anwserNum;
-                var questionId = this.questionNum;
-
                 // show correct awnsers imediatly
                 if (self.config.trailMode === true) {
                     dragged.classList.remove('correctAnswer');
                     dragged.classList.remove('wrongAnswer');
-                    if (answerId === questionId) {
+                    if (dragged.anwserNum === this.questionNum) {
                         dragged.classList.add('correctAnswer');
                     } else {
                         dragged.classList.add('wrongAnswer');
                     }
                 }
-                this.appendChild(dragged);
+                this.appendChild(dragged); // move element
 
                 // show results when done
                 if(self.config.alertResult === true) {
-                    // console.log('answerd?', dragged.answerd);
-                    if (answerId === questionId) {
+                    if (dragged.anwserNum === this.questionNum) {
                         dragged.correctAnswer = true;
                     } else {
                         dragged.correctAnswer = false;
@@ -149,7 +146,6 @@ function dragDropQuiz (config) {
                     }
 
                     // when all questions are awnsered show results
-                    // console.log(self.numAnswerd + '=' + self.numOfQuestions);
                     if (self.numOfQuestions === self.numAnswerd)
                     {
                         var correct = 0;
@@ -189,17 +185,18 @@ function dragDropQuiz (config) {
     self.addEvent(self.answerDiv, 'drop', function (e) {
         if (e.stopPropagation) e.stopPropagation();
         if (e.preventDefault) e.preventDefault();
-        var textData = document.getElementById(e.dataTransfer.getData('Text'));
-        textData.classList.remove('correctAnswer');
-        textData.classList.remove('wrongAnswer');
-        this.classList.remove('over');
-        this.appendChild(textData);
+        var textData = document.getElementById(e.dataTransfer.getData('text/plain'));
 
-        textData.answerd = false;
-        self.numAnswerd--;
+        if (textData !== null && textData.answerId === this.id) {
+            textData.classList.remove('correctAnswer');
+            textData.classList.remove('wrongAnswer');
+            this.classList.remove('over');
+            this.appendChild(textData); // replace element
+
+            textData.answerd = false;
+            self.numAnswerd--;
+        }
 
         return false;
     });
 }
-
-// window.onload = dragDropQuiz(quizConfig);
