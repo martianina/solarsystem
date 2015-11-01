@@ -3,6 +3,11 @@ layout: page
 title: Small Bodies
 permalink: small-bodies.html
 group: navigation
+css:
+    - css/quiz.css
+js:
+    - js/ios-drag-drop.js
+    - js/quiz.js
 ---
 
 <script>
@@ -57,3 +62,40 @@ Your browser does not support this audio format (wav).
 Sometimes asteroids collide with each other and pieces of them break off. These pieces of broken-off rock (sometimes called meteoroids) travel around the Solar System, and on occasion they may cross paths with Earth and hit the planet. When they fall through the Earth’s atmosphere, they can be seen as "shooting stars" in the sky as the rocks burn up. If the rock is sufficiently large, part of it may survive the flight through the atmosphere and fall to the ground. These pieces are then called meteorites. Most of the meteorites come from asteroids, but some are thought to have come from the Moon or Mars, blasted off from their surface by big meteoroid impacts.
 
 Comets leave trails of debris in their wake as they travel through the inner part of the Solar System. When Earth passes through these trails of dust and ice on its orbit around the Sun, the particles can hit the Earth and burn up in the atmosphere. These events can be observed from the surface of Earth as meteor showers.
+
+# Test Yourself
+Match the names with the images.
+
+<script>
+window.onload = function init() {
+    var quiz1 = new dragDropQuiz({
+        trailMode: true,
+        alertResult: false,
+    });
+};
+var iosDragDropShim = { enableEnterLeave: true };
+</script>
+
+<div id="overlay" onclick='showNotice()'></div>
+
+<div class="dragScriptContainer">
+    <div id="answerDiv">
+        <div class="dragDropSmallBox">Asteroid</div>
+        <div class="dragDropSmallBox">Comet</div>
+        <div class="dragDropSmallBox">Meteor</div>
+    </div>
+    <div id="questionDiv">
+        <div class="col">
+            <div class="imgContainer"><img src="img/130/asteroid.jpg" alt="Asteroid"></div>
+            <div class="destinationBox"></div>
+        </div>
+        <div class="col">
+            <div class="imgContainer"><img src="img/130/comet.jpg" alt="Comet"></div>
+            <div class="destinationBox"></div>
+        </div>
+        <div class="col">
+            <div class="imgContainer"><img src="img/130/ISS-meteor.jpg" alt="Meteor"></div>
+            <div class="destinationBox"></div>
+        </div>
+    </div>
+</div>

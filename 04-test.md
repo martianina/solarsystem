@@ -118,8 +118,7 @@ var iosDragDropShim = { enableEnterLeave: true };
     </div>
 </div>
 
-<hr>
-
+### Model the Solar System
 Model the solar system by dragging the images to the corresponding places:
 
 <div class="dragScriptContainer">

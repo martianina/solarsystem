@@ -136,7 +136,7 @@ function dragDropQuiz (config) {
                 this.appendChild(dragged); // move element
 
                 // show results when done
-                if(self.config.alertResult === true) {
+                if (self.config.alertResult === true) {
                     if (dragged.anwserNum === this.questionNum) {
                         dragged.correctAnswer = true;
                     } else {

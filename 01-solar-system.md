@@ -388,7 +388,7 @@ Orbit Period|59,800 Earth Days|
 
 [NASA Eyes simulation](http://eyes.nasa.gov)
 
-## Test Yourself
+# Test Yourself
 Match the names with the images.
 
 <script>
@@ -400,7 +400,7 @@ window.onload = function init() {
 };
 var iosDragDropShim = { enableEnterLeave: true };
 </script>
-<div id="dragScriptContainer">
+<div class="dragScriptContainer">
     <div id="answerDiv">
         <div class="dragDropSmallBox" id="a1">Sun</div>
         <div class="dragDropSmallBox" id="a2">Mercury</div>
@@ -414,39 +414,39 @@ var iosDragDropShim = { enableEnterLeave: true };
     </div>
     <div id="questionDiv">
         <div class="col">
-            <div class="dragDropSmallBox" id="q1"><img src="img/130/sun.jpg" alt="Our Sun"></div>
+            <div class="imgContainer" id="q1"><img src="img/130/sun.jpg" alt="Our Sun"></div>
             <div class="destinationBox"></div>
         </div>
         <div class="col">
-            <div class="dragDropSmallBox" id="q2"><img src="img/130/mercury.jpg" alt="Mercury"></div>
+            <div class="imgContainer" id="q2"><img src="img/130/mercury.jpg" alt="Mercury"></div>
             <div class="destinationBox"></div>
         </div>
         <div class="col">
-            <div class="dragDropSmallBox" id="q3"><img src="img/130/venus.jpg" alt="Venus"></div>
+            <div class="imgContainer" id="q3"><img src="img/130/venus.jpg" alt="Venus"></div>
             <div class="destinationBox"></div>
         </div>
         <div class="col">
-            <div class="dragDropSmallBox" id="q4"><img src="img/130/earth.jpg" alt="Earth"></div>
+            <div class="imgContainer" id="q4"><img src="img/130/earth.jpg" alt="Earth"></div>
             <div class="destinationBox"></div>
         </div>
         <div class="col">
-            <div class="dragDropSmallBox" id="q5"><img src="img/130/mars.jpg" alt="Mars"></div>
+            <div class="imgContainer" id="q5"><img src="img/130/mars.jpg" alt="Mars"></div>
             <div class="destinationBox"></div>
         </div>
         <div class="col">
-            <div class="dragDropSmallBox" id="q6"><img src="img/130/jupiter.jpg" alt="Jupiter"></div>
+            <div class="imgContainer" id="q6"><img src="img/130/jupiter.jpg" alt="Jupiter"></div>
             <div class="destinationBox"></div>
         </div>
         <div class="col">
-            <div class="dragDropSmallBox" id="q7"><img src="img/130/saturn.jpg" alt="Saturn"></div>
+            <div class="imgContainer" id="q7"><img src="img/130/saturn.jpg" alt="Saturn"></div>
             <div class="destinationBox"></div>
         </div>
         <div class="col">
-            <div class="dragDropSmallBox" id="q8"><img src="img/130/uranus.jpg" alt="Uranus"></div>
+            <div class="imgContainer" id="q8"><img src="img/130/uranus.jpg" alt="Uranus"></div>
             <div class="destinationBox"></div>
         </div>
         <div class="col">
-            <div class="dragDropSmallBox" id="q9"><img src="img/130/neptune.jpg" alt="Neptune"></div>
+            <div class="imgContainer" id="q9"><img src="img/130/neptune.jpg" alt="Neptune"></div>
             <div class="destinationBox"></div>
         </div>
     </div>
