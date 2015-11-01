@@ -45,6 +45,9 @@ $on-laptop:        800px;
 .player {
     float: right;
     cursor: pointer;
+    &:hover {
+        opacity: 0.7;
+    }
 }
 
 
