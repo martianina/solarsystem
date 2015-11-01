@@ -51,9 +51,9 @@ function dragDropQuiz (config) {
     this.addEvent = addEvent;
     this.shuffleDom = shuffleDom;
     this.config = {
-        trailMode: (config.trailMode === undefined) ? false : config.trailMode,
-        alertResult: (config.alertResult === undefined) ? true : config.alertResult,
-        randomDestination: (config.randomDestination === undefined) ? true : config.randomDestination,
+        trailMode: (typeof config.trailMode === "undefined") ? false : config.trailMode,
+        alertResult: (typeof config.alertResult === "undefined") ? true : config.alertResult,
+        randomDestination: (typeof config.randomDestination === "undefined") ? true : config.randomDestination,
         infoWrong: config.infoWrong || '',
         answerId: config.answerId || 'answerDiv', // needs to be unique
         questionId: config.questionId || 'questionDiv', // needs to be unique
@@ -66,8 +66,8 @@ function dragDropQuiz (config) {
     this.destinationBox = document.querySelectorAll('#' + self.config.questionId + ' .'+ self.config.destinationClass);
 
     self.shuffleDom(self.answerDiv);
-    if (config.randomDestination === true) {
-        self.shuffleDom(document.getElementById(self.config.questionId), 2);
+    if (self.config.randomDestination === true) {
+        self.shuffleDom(document.getElementById(self.config.questionId));
     }
 
     for (var i = 0; i < self.answerItems.length; i++) {
