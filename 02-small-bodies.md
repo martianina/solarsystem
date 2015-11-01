@@ -76,8 +76,6 @@ window.onload = function init() {
 var iosDragDropShim = { enableEnterLeave: true };
 </script>
 
-<div id="overlay" onclick='showNotice()'></div>
-
 <div class="dragScriptContainer">
     <div id="answerDiv">
         <div class="dragDropSmallBox">Asteroid</div>

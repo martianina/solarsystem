@@ -51,7 +51,7 @@ function dragDropQuiz (config) {
     this.addEvent = addEvent;
     this.shuffleDom = shuffleDom;
     this.config = {
-        trailMode: (config.trailMode === undefined) ? false : config.alertResult,
+        trailMode: (config.trailMode === undefined) ? false : config.trailMode,
         alertResult: (config.alertResult === undefined) ? true : config.alertResult,
         randomDestination: (config.randomDestination === undefined) ? true : config.randomDestination,
         infoWrong: config.infoWrong || '',
