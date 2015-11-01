@@ -4,6 +4,7 @@
 @charset "utf-8";
 
 /* COLORS  */
+$white:  #fff;
 $red:  #FF3636;
 $orange: #F29105;
 $light-blue: #2698BA;
@@ -38,7 +39,7 @@ $grey-color-dark:  #333;
 // Width of the content area
 $content-width:    800px;
 
-$on-palm:          600px;
+$on-palm:          764px;
 $on-laptop:        800px;
 
 
@@ -48,6 +49,16 @@ $on-laptop:        800px;
     &:hover {
         opacity: 0.7;
     }
+}
+
+a {
+    // http://caniuse.com/#search=word-wrap
+    word-wrap: break-word;
+    // http://caniuse.com/#search=hyphens
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 

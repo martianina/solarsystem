@@ -154,7 +154,7 @@ body {
 	opacity: 0;
 	filter: alpha(opacity=0);
 	pointer-events: none;
-	z-index: 9999;
+	z-index: 30;
 
 	-webkit-transition: opacity 0.5s;
 	transition: opacity 0.5s;

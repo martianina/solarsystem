@@ -55,11 +55,11 @@
         }
     }
 
-    @include media-query(705px) { // $on-palm = 600px
+    @include media-query($on-palm) {
         position: absolute;
         top: 9px;
         right: 30px;
-        background-color: $background-color;
+        background-color: $white;
         border: 1px solid $grey-color-light;
         // border-radius: 5px;
         text-align: right;
