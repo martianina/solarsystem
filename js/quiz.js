@@ -48,6 +48,8 @@ function dragDropQuiz (config) {
     var self = this;
     this.numOfQuestions = 0;
     this.numAnswerd = 0;
+    this.addEvent = addEvent;
+    this.shuffleDom = shuffleDom;
     this.config = {
         trailMode: config.trailMode || false,
         alertResult: config.alertResult || true,
@@ -62,61 +64,62 @@ function dragDropQuiz (config) {
     this.answerItems = document.querySelectorAll('#' + self.config.answerId + ' ' + self.config.answerItems);
     this.destinationBox = document.querySelectorAll('#' + self.config.questionId + ' .'+ self.config.destinationClass);
 
-    shuffleDom(self.answerDiv);
-    shuffleDom(document.getElementById(self.config.questionId), 2);
+    self.shuffleDom(self.answerDiv);
+    self.shuffleDom(document.getElementById(self.config.questionId), 2);
 
     for (var i = 0; i < self.answerItems.length; i++) {
         var ela = self.answerItems[i];
         ela.setAttribute('draggable', 'true');
+        ela.questionId = self.config.questionId;
+        ela.answerId = self.config.answerId;
         ela.correctAnswer = false;
+        ela.anwserNum = i+1;
         ela.answerd = false;
         self.numOfQuestions++;
 
-        addEvent(ela, 'dragstart', function (e) {
+        self.addEvent(ela, 'dragstart', function (e) {
             e.dataTransfer.effectAllowed = 'move';
-            e.dataTransfer.dropEffect = 'move';
             e.dataTransfer.setData('Text', this.id);
             this.style.backgroundColor = '#999';
         });
 
-        addEvent(ela, 'dragend', function (e) {
+        self.addEvent(ela, 'dragend', function (e) {
             this.style.backgroundColor = '';
         });
     }
 
     for (var j = 0; j < self.destinationBox.length; j++) {
         var el = self.destinationBox[j];
+        el.questionId = self.config.questionId;
+        el.answerId = self.config.answerId;
+        el.questionNum = j+1;
 
-        addEvent(el, 'dragover', function (e) {
+        self.addEvent(el, 'dragover', function (e) {
             if (e.preventDefault) e.preventDefault();
             e.dataTransfer.dropEffect = 'move';
             return false;
         });
 
-        addEvent(el, 'dragenter', function (e) {
+        self.addEvent(el, 'dragenter', function (e) {
             this.classList.add('over');
             return false;
         });
 
-        addEvent(el, 'dragleave', function () {
+        self.addEvent(el, 'dragleave', function () {
             this.classList.remove('over');
         });
 
-        addEvent(el, 'drop', function (e) {
+        self.addEvent(el, 'drop', function (e) {
             if (e.stopPropagation) e.stopPropagation();
             if (e.preventDefault) e.preventDefault();
             var dragged = document.getElementById(e.dataTransfer.getData('Text'));
 
             this.classList.remove('over');
 
-            if (e.target.className === self.config.destinationClass)
+            if (dragged.questionId === this.parentNode.parentNode.id) //&& e.target.className === self.config.destinationClass)
             {
-                var prev = this.previousSibling;
-                while(prev && prev.nodeType != 1) {
-                    prev = prev.previousSibling;
-                }
-                var answerId = dragged.id.replace(/[^0-9]/g,'');
-                var questionId = prev.id.replace(/[^0-9]/g,'');
+                var answerId = dragged.anwserNum;
+                var questionId = this.questionNum;
 
                 // show correct awnsers imediatly
                 if (self.config.trailMode === true) {
@@ -128,7 +131,7 @@ function dragDropQuiz (config) {
                         dragged.classList.add('wrongAnswer');
                     }
                 }
-                e.target.appendChild(dragged);
+                this.appendChild(dragged);
 
                 // show results when done
                 if(self.config.alertResult === true) {
@@ -168,22 +171,22 @@ function dragDropQuiz (config) {
         });
     }
 
-    addEvent(self.answerDiv, 'dragover', function (e) {
+    self.addEvent(self.answerDiv, 'dragover', function (e) {
         if (e.preventDefault) e.preventDefault();
         e.dataTransfer.dropEffect = 'move';
         return false;
     });
 
-    addEvent(self.answerDiv, 'dragenter', function (e) {
+    self.addEvent(self.answerDiv, 'dragenter', function (e) {
         this.classList.add('over');
         return false;
     });
 
-    addEvent(self.answerDiv, 'dragleave', function (e) {
+    self.addEvent(self.answerDiv, 'dragleave', function (e) {
         this.classList.remove('over');
     });
 
-    addEvent(self.answerDiv, 'drop', function (e) {
+    self.addEvent(self.answerDiv, 'drop', function (e) {
         if (e.stopPropagation) e.stopPropagation();
         if (e.preventDefault) e.preventDefault();
         var textData = document.getElementById(e.dataTransfer.getData('Text'));
