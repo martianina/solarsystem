@@ -1,5 +1,8 @@
 # SolarSystem
 [![Build Status](https://travis-ci.org/publicarray/solarsystem.svg?branch=gh-pages)](https://travis-ci.org/publicarray/solarsystem)
+
+This project is hosted at [github.com/publicarray/solarsystem](https://github.com/publicarray/solarsystem). A live version is available at [publicarray.github.io/solarsystem](https://publicarray.github.io/solarsystem/).
+
 ## Install
 ### Requirements
 [https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll](https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll)
@@ -10,7 +13,7 @@
 gem install bundler
 ```
 
-### Install dependencies
+### Install dependencies and serve
 
 ```
 cd SolarSystem
