@@ -30,7 +30,7 @@ window.onload = function init() {
     var quiz1 = new dragDropQuiz({
         trailMode: false,
         alertResult: true,
-        infoWrong: 'You can catch-up on the Solar System <a href="/solar-system.html">here</a> and small bodies <a href="/small-bodies.html">here</a>',
+        infoWrong: 'You can catch-up on the Solar System <a href="solar-system.html">here</a> and small bodies <a href="small-bodies.html">here</a>',
         answerId: 'answerDiv1',
         questionId: 'questionDiv1',
     });
@@ -38,7 +38,7 @@ window.onload = function init() {
         trailMode: false,
         alertResult: true,
         randomDestination: false,
-        infoWrong: 'You can catch-up on the Solar System <a href="/solar-system.html">here</a>.',
+        infoWrong: 'You can catch-up on the Solar System <a href="solar-system.html">here</a>.',
         answerId: 'answerDiv2',
         questionId: 'questionDiv2',
         answerItems: '.draggable',
