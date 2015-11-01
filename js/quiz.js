@@ -53,6 +53,7 @@ function dragDropQuiz (config) {
     this.config = {
         trailMode: config.trailMode || false,
         alertResult: config.alertResult || true,
+        randomDestination: config.randomDestination || true,
         infoWrong: config.infoWrong || '',
         answerId: config.answerId || 'answerDiv', // needs to be unique
         questionId: config.questionId || 'questionDiv', // needs to be unique
@@ -65,7 +66,10 @@ function dragDropQuiz (config) {
     this.destinationBox = document.querySelectorAll('#' + self.config.questionId + ' .'+ self.config.destinationClass);
 
     self.shuffleDom(self.answerDiv);
-    self.shuffleDom(document.getElementById(self.config.questionId), 2);
+    if (config.randomDestination === true) {
+        self.shuffleDom(document.getElementById(self.config.questionId), 2);
+
+    }
 
     for (var i = 0; i < self.answerItems.length; i++) {
         var ela = self.answerItems[i];

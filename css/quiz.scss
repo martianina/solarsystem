@@ -2,35 +2,32 @@
 # Quiz
 ---
 
-$height: 30px;
-$width: 130px; // 200px
+$height: 30px; // quiz 1
+$width: 130px; // image dimentions
 
-#dragScriptContainer, #dragScriptContainer1, #dragScriptContainer2 {
+// Quiz
+.dragScriptContainer {
     text-align: center;
 }
 
 .dragDropSmallBox {
+    display: inline-block;
+    background-color: #fff;
+    cursor: pointer;
     line-height: 2em;
+    margin-right: 2px;
+    margin-bottom: 2px;
     width: $width;
+    height: $height;
 }
 
 #answerDiv, #answerDiv1, #answerDiv2 {
     min-height: 28px;
     border: 1px solid #aaa;
     padding: 2px;
-
-    .dragDropSmallBox {
-        display: inline-block;
-        background-color: #fff;
-        cursor: pointer;
-        margin-right: 2px;
-        margin-bottom: 2px;
-        width: 133px;
-        height: $height;
-    }
 }
 
-#questionDiv, #questionDiv1, #questionDiv2 {
+#questionDiv, #questionDiv1 {
     display: inline-block;
 
     .col {
@@ -40,8 +37,9 @@ $width: 130px; // 200px
         padding: 2px;
     }
 
-    .dragDropSmallBox {
+    .imgContainer {
         height: $width;
+        width: $width;
         background-color: #000;
         // vertical-align: middle;
         // position: relative;
@@ -84,14 +82,84 @@ $width: 130px; // 200px
     }
 }
 
-#questionDiv .destinationBox.over {
+#questionDiv .destinationBox.over,
+#questionDiv1 .destinationBox.over,
+#questionDiv2 .destinationBox.over,
+.destinationBox.over {
     background-color: #777;
 }
 
-#answerDiv.over {
-    background-color: #777;
+// #answerDiv.over, #answerDiv1.over, #answerDiv2.over {
+//     background-color: #777;
+// }
+
+// quiz 2
+.draggable {
+    display: inline-block;
+    background-color: #000;
+    cursor: pointer;
+    line-height: 2em;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    width: $width/2;
+    height: $width/2;
+    img {
+        max-height: 100%;
+    }
 }
 
+#questionDiv2 {
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+    .destinationBox {
+        width: $width/2;
+        height: $width/2;
+        border: #000 solid 1px;
+        position: absolute;
+        margin-left: -$width/4;
+        margin-top: -$width/4;
+    }
+    #p1 {
+        top: 50%;
+        left: 50%;
+    }
+    #p2 {
+        top: 60%;
+        left: 60%;
+    }
+    #p3 {
+        top: 35%;
+        left: 65%;
+    }
+    #p4 {
+        top: 70%;
+        left: 35%;
+    }
+    #p5 {
+        top: 20%;
+        left: 35%;
+    }
+    #p6 {
+        top: 85%;
+        left: 30%;
+    }
+    #p7 {
+        top: 90%;
+        left: 80%;
+
+    }
+    #p8 {
+        top: 15%;
+        left: 90%;
+    }
+    #p9 {
+        top: 10%;
+        left: 8%;
+    }
+}
+// Notice
 #overlay {
     visibility: hidden;
     position: fixed;

@@ -12,6 +12,7 @@ js:
 ---
 <script>
 function toggleSound(el) {
+    console.log('click', el);
     var audioElem = el;
     var found = false;
     while (found === false) {
@@ -413,39 +414,39 @@ var iosDragDropShim = { enableEnterLeave: true };
     </div>
     <div id="questionDiv">
         <div class="col">
-            <div class="dragDropSmallBox" id="q1"><img src="img/250/sun.jpg" alt="Our Sun"></div>
+            <div class="dragDropSmallBox" id="q1"><img src="img/130/sun.jpg" alt="Our Sun"></div>
             <div class="destinationBox"></div>
         </div>
         <div class="col">
-            <div class="dragDropSmallBox" id="q2"><img src="img/250/mercury.jpg" alt="Mercury"></div>
+            <div class="dragDropSmallBox" id="q2"><img src="img/130/mercury.jpg" alt="Mercury"></div>
             <div class="destinationBox"></div>
         </div>
         <div class="col">
-            <div class="dragDropSmallBox" id="q3"><img src="img/250/venus.jpg" alt="Venus"></div>
+            <div class="dragDropSmallBox" id="q3"><img src="img/130/venus.jpg" alt="Venus"></div>
             <div class="destinationBox"></div>
         </div>
         <div class="col">
-            <div class="dragDropSmallBox" id="q4"><img src="img/250/earth.jpg" alt="Earth"></div>
+            <div class="dragDropSmallBox" id="q4"><img src="img/130/earth.jpg" alt="Earth"></div>
             <div class="destinationBox"></div>
         </div>
         <div class="col">
-            <div class="dragDropSmallBox" id="q5"><img src="img/250/mars.jpg" alt="Mars"></div>
+            <div class="dragDropSmallBox" id="q5"><img src="img/130/mars.jpg" alt="Mars"></div>
             <div class="destinationBox"></div>
         </div>
         <div class="col">
-            <div class="dragDropSmallBox" id="q6"><img src="img/250/jupiter.jpg" alt="Jupiter"></div>
+            <div class="dragDropSmallBox" id="q6"><img src="img/130/jupiter.jpg" alt="Jupiter"></div>
             <div class="destinationBox"></div>
         </div>
         <div class="col">
-            <div class="dragDropSmallBox" id="q7"><img src="img/250/saturn.jpg" alt="Saturn"></div>
+            <div class="dragDropSmallBox" id="q7"><img src="img/130/saturn.jpg" alt="Saturn"></div>
             <div class="destinationBox"></div>
         </div>
         <div class="col">
-            <div class="dragDropSmallBox" id="q8"><img src="img/250/uranus.jpg" alt="Uranus"></div>
+            <div class="dragDropSmallBox" id="q8"><img src="img/130/uranus.jpg" alt="Uranus"></div>
             <div class="destinationBox"></div>
         </div>
         <div class="col">
-            <div class="dragDropSmallBox" id="q9"><img src="img/250/neptune.jpg" alt="Neptune"></div>
+            <div class="dragDropSmallBox" id="q9"><img src="img/130/neptune.jpg" alt="Neptune"></div>
             <div class="destinationBox"></div>
         </div>
     </div>
