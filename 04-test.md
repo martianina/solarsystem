@@ -10,6 +10,9 @@ js:
     - js/quiz.js
 ---
 
+* [Test-Yourself](#test-yourself)
+  * [Model the Solar System](#model-the-solar-system)
+
 ## Test Yourself
 Match the names with the images.
 

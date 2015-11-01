@@ -29,6 +29,12 @@ function toggleSound(el) {
 Your browser does not support this audio format (wav).
 </audio>
 
+* [Kuiper Belt](#)
+  * [Pluto](#pluto)
+  * [Kuiper Belt](#kuiper-belt)
+  * [Star Life-cycle](#star-life-cycle)
+* [Additional Resources](#additional-resources)
+
 ## Pluto
 ![Pluto](img/pluto.jpg)
 

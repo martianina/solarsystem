@@ -29,6 +29,22 @@ function toggleSound(el) {
 }
 </script>
 
+ * [Solar System](#)
+   * [Our Sun](#our-sun)
+   * [Terrestrial Planets](#terrestrial-planets)
+     * [Mercury](#mercury)
+     * [Venus](#venus)
+     * [Earth](#earth)
+       * [The Moon](#the-moon)
+     * [Mars](#mars)
+   * [Joivan Planets](#jovian-planets)
+     * [Jupiter](#jupiter)
+     * [Saturn](#saturn)
+     * [Uranus](#uranus)
+     * [Neptune](#neptune)
+ * [Additional Resources](#additional-resources)
+ * [Test Yourself](#test-yourself)
+
 <small>Click on an object to jump to it:</small>
 <img src="img/solar-system.jpg" alt="The Solar System" usemap="#navigation" />
 
