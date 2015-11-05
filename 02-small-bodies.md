@@ -21,7 +21,7 @@ function toggleSound(el) {
         }
     }
 
-    if (audioElem.paused || audioElem.paused)
+    if (audioElem.paused)
         audioElem.play();
     else
         audioElem.pause();
