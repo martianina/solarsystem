@@ -409,7 +409,7 @@ Match the names with the images.
 
 <script>
 window.onload = function init() {
-    var quiz1 = new dragDropQuiz({
+    var quiz1 = new DragDropQuiz({
         trailMode: true,
         alertResult: false,
     });

@@ -30,14 +30,14 @@ window.onload = function init() {
     //     answerItems: '.dragDropSmallBox',
     //     destinationClass: 'destinationBox',
     // };
-    var quiz1 = new dragDropQuiz({
+    var quiz1 = new DragDropQuiz({
         trailMode: false,
         alertResult: true,
         infoWrong: 'You can catch-up on the Solar System <a href="solar-system.html">here</a> and small bodies <a href="small-bodies.html">here</a>',
         answerId: 'answerDiv1',
         questionId: 'questionDiv1',
     });
-    var quiz2 = new dragDropQuiz({
+    var quiz2 = new DragDropQuiz({
         trailMode: false,
         alertResult: true,
         randomDestination: false,

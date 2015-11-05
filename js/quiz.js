@@ -44,13 +44,10 @@ function addEvent (to, type, fn) {
     }
 }
 
-function dragDropQuiz (config) {
+function DragDropQuiz (config) {
+    'use strict';
     var self = this;
-    this.numOfQuestions = 0;
-    this.numAnswerd = 0;
-    this.addEvent = addEvent;
-    this.shuffleDom = shuffleDom;
-    this.config = {
+    self.config = {
         trailMode: (typeof config.trailMode === "undefined") ? false : config.trailMode,
         alertResult: (typeof config.alertResult === "undefined") ? true : config.alertResult,
         randomDestination: (typeof config.randomDestination === "undefined") ? true : config.randomDestination,
@@ -60,132 +57,97 @@ function dragDropQuiz (config) {
         answerItems: config.answerItems || '.dragDropSmallBox',
         destinationClass: config.destinationClass || 'destinationBox',
     };
+    self.numAnswerd = 0;
+    self.numOfQuestions = 0;
+    self.answerDiv = document.getElementById(self.config.answerId);
+    self.answerItems = document.querySelectorAll('#' + self.config.answerId + ' ' + self.config.answerItems);
+    self.destinationBox = document.querySelectorAll('#' + self.config.questionId + ' .'+ self.config.destinationClass);
 
-    this.answerDiv = document.getElementById(self.config.answerId);
-    this.answerItems = document.querySelectorAll('#' + self.config.answerId + ' ' + self.config.answerItems);
-    this.destinationBox = document.querySelectorAll('#' + self.config.questionId + ' .'+ self.config.destinationClass);
+    // Prepare Functions
 
-    self.shuffleDom(self.answerDiv);
-    if (self.config.randomDestination === true) {
-        self.shuffleDom(document.getElementById(self.config.questionId));
-    }
+    self.dragStartEvent = function (e) {
+        e.dataTransfer.effectAllowed = 'move';
+        e.dataTransfer.setData('text/plain', this.id);
+        this.style.backgroundColor = '#999';
+    };
 
-    for (var i = 0; i < self.answerItems.length; i++) {
-        var ela = self.answerItems[i];
-        ela.setAttribute('draggable', 'true');
-        ela.id = config.answerId+'-'+(i+1); // create unique id's
-        ela.questionId = self.config.questionId;
-        ela.answerId = self.config.answerId;
-        ela.correctAnswer = false;
-        ela.anwserNum = i+1;
-        ela.answerd = false;
-        self.numOfQuestions++;
+    self.dragEndEvent = function (e) {
+        this.style.backgroundColor = '';
+    };
 
-        self.addEvent(ela, 'dragstart', function (e) {
-            e.dataTransfer.effectAllowed = 'move';
-            e.dataTransfer.setData('text/plain', this.id);
-            this.style.backgroundColor = '#999';
-        });
-
-        self.addEvent(ela, 'dragend', function (e) {
-            this.style.backgroundColor = '';
-        });
-    }
-
-    for (var j = 0; j < self.destinationBox.length; j++) {
-        var el = self.destinationBox[j];
-        el.questionId = self.config.questionId;
-        el.questionNum = j+1;
-
-        self.addEvent(el, 'dragover', function (e) {
-            if (e.preventDefault) e.preventDefault();
-            e.dataTransfer.dropEffect = 'move';
-            return false;
-        });
-
-        self.addEvent(el, 'dragenter', function (e) {
-            this.classList.add('over');
-            return false;
-        });
-
-        self.addEvent(el, 'dragleave', function () {
-            this.classList.remove('over');
-        });
-
-        self.addEvent(el, 'drop', function (e) {
-            if (e.stopPropagation) e.stopPropagation();
-            if (e.preventDefault) e.preventDefault();
-
-            this.classList.remove('over');
-            var dragged = document.getElementById(e.dataTransfer.getData('text/plain'));
-
-            // this.questionId === this.parentNode.parentNode.id
-            if (dragged !== null && dragged.questionId === this.questionId && e.target.className === self.config.destinationClass)
-            {
-                // show correct awnsers imediatly
-                if (self.config.trailMode === true) {
-                    dragged.classList.remove('correctAnswer');
-                    dragged.classList.remove('wrongAnswer');
-                    if (dragged.anwserNum === this.questionNum) {
-                        dragged.classList.add('correctAnswer');
-                    } else {
-                        dragged.classList.add('wrongAnswer');
-                    }
-                }
-                this.appendChild(dragged); // move element
-
-                // show results when done
-                if (self.config.alertResult === true) {
-                    if (dragged.anwserNum === this.questionNum) {
-                        dragged.correctAnswer = true;
-                    } else {
-                        dragged.correctAnswer = false;
-                    }
-
-                    // if already answerd don't do anything
-                    if (dragged.answerd === false) {
-                        self.numAnswerd++;
-                        dragged.answerd = true;
-                    }
-
-                    // when all questions are awnsered show results
-                    if (self.numOfQuestions === self.numAnswerd)
-                    {
-                        var correct = 0;
-                        for (var i = 0; i < self.answerItems.length; i++) {
-                            if (self.answerItems[i].correctAnswer === true) {
-                                correct++;
-                            }
-                        }
-                        if (correct <= self.numOfQuestions/2) {
-                            showNotice('<p>You got ' + correct + ' out of ' + self.numOfQuestions + ' correct!</br>' + self.config.infoWrong + '</p>');
-                        } else {
-                            showNotice('<p>Congratulations! You got ' + correct + ' out of ' + self.numOfQuestions + ' correct!</p>');
-                        }
-                    }
-                }
-            }
-
-            return false;
-        });
-    }
-
-    self.addEvent(self.answerDiv, 'dragover', function (e) {
+    self.dragOverEvent = function (e) {
         if (e.preventDefault) e.preventDefault();
         e.dataTransfer.dropEffect = 'move';
         return false;
-    });
+    };
 
-    self.addEvent(self.answerDiv, 'dragenter', function (e) {
+    self.dragEnterEvent = function (e) {
         this.classList.add('over');
         return false;
-    });
+    };
 
-    self.addEvent(self.answerDiv, 'dragleave', function (e) {
+    self.dragLeaveEvent = function (e) {
         this.classList.remove('over');
-    });
+    };
 
-    self.addEvent(self.answerDiv, 'drop', function (e) {
+    self.dropEvent = function (e) {
+        if (e.stopPropagation) e.stopPropagation();
+        if (e.preventDefault) e.preventDefault();
+
+        this.classList.remove('over');
+        var dragged = document.getElementById(e.dataTransfer.getData('text/plain'));
+
+        // this.questionId === this.parentNode.parentNode.id
+        if (dragged !== null && dragged.questionId === this.questionId && e.target.className === self.config.destinationClass)
+        {
+            // show correct answers immediately
+            if (self.config.trailMode === true) {
+                dragged.classList.remove('correctAnswer');
+                dragged.classList.remove('wrongAnswer');
+                if (dragged.anwserNum === this.questionNum) {
+                    dragged.classList.add('correctAnswer');
+                } else {
+                    dragged.classList.add('wrongAnswer');
+                }
+            }
+            this.appendChild(dragged); // move element
+
+            // show results when done
+            if (self.config.alertResult === true) {
+                if (dragged.anwserNum === this.questionNum) {
+                    dragged.correctAnswer = true;
+                } else {
+                    dragged.correctAnswer = false;
+                }
+
+                // if already answered don't do anything
+                if (dragged.answerd === false) {
+                    self.numAnswerd++;
+                    dragged.answerd = true;
+                }
+
+                // when all questions are answered show results
+                if (self.numOfQuestions === self.numAnswerd)
+                {
+                    var correct = 0;
+                    for (var i = 0; i < self.answerItems.length; i++) {
+                        if (self.answerItems[i].correctAnswer === true) {
+                            correct++;
+                        }
+                    }
+                    if (correct <= self.numOfQuestions/2) {
+                        showNotice('<p>You got ' + correct + ' out of ' + self.numOfQuestions + ' correct!</br>' + self.config.infoWrong + '</p>');
+                    } else {
+                        showNotice('<p>Congratulations! You got ' + correct + ' out of ' + self.numOfQuestions + ' correct!</p>');
+                    }
+                }
+            }
+        }
+
+        return false;
+    };
+
+    self.dropAnswerBackEvent = function (e) {
         if (e.stopPropagation) e.stopPropagation();
         if (e.preventDefault) e.preventDefault();
         var textData = document.getElementById(e.dataTransfer.getData('text/plain'));
@@ -201,5 +163,43 @@ function dragDropQuiz (config) {
         }
 
         return false;
-    });
+    };
+
+    // Run Functions
+
+    shuffleDom(self.answerDiv);
+    if (self.config.randomDestination === true) {
+        shuffleDom(document.getElementById(self.config.questionId));
+    }
+
+    for (var i = 0; i < self.answerItems.length; i++) {
+        var ela = self.answerItems[i];
+        ela.setAttribute('draggable', 'true');
+        ela.id = config.answerId+'-'+(i+1); // create unique id's
+        ela.questionId = self.config.questionId;
+        ela.answerId = self.config.answerId;
+        ela.correctAnswer = false;
+        ela.anwserNum = i+1;
+        ela.answerd = false;
+        self.numOfQuestions++;
+
+        addEvent(ela, 'dragstart', self.dragStartEvent);
+        addEvent(ela, 'dragend', self.dragEndEvent);
+    }
+
+    for (var j = 0; j < self.destinationBox.length; j++) {
+        var el = self.destinationBox[j];
+        el.questionId = self.config.questionId;
+        el.questionNum = j+1;
+
+        addEvent(el, 'dragover', self.dragOverEvent);
+        addEvent(el, 'dragenter', self.dragEnterEvent);
+        addEvent(el, 'dragleave', self.dragLeaveEvent);
+        addEvent(el, 'drop', self.dropEvent);
+    }
+
+    addEvent(self.answerDiv, 'dragover', self.dragOverEvent);
+    addEvent(self.answerDiv, 'dragenter', self.dragEnterEvent);
+    addEvent(self.answerDiv, 'dragleave', self.dragLeaveEvent);
+    addEvent(self.answerDiv, 'drop', self.dropAnswerBackEvent);
 }
