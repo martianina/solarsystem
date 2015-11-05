@@ -62,7 +62,7 @@ function toggleSound(el) {
     <area shape="default" alt="The Solar System"/>
 </map>
 
-<img class="player" src="img/speaker-icon.png" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
+<img class="player" src="img/speaker-icon.svg" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
 <audio class="audio">
   <source src="speech/solarsystem.wav" type="audio/wav">
 Your browser does not support this audio format (wav).
@@ -73,9 +73,9 @@ There are two basic types of planets, Earth-like (Terrestrial) planets and Jupit
 The Jovian planets are large planets located in the outer part of the Solar System. The Jovian planets are gas giants, large objects made mostly of hydrogen and helium. They are much larger than terrestrial planets and are rapidly rotating objects. They all have rings, and extensive families of moons and no solid surface on which to stand on. The apparent visible surfaces are just the top layers of clouds in their atmospheres.
 
 ## Our Sun
-![Our Sun](img/sun.jpg)
+![Our Sun](img/740/sun.jpg)
 
-<img class="player" src="img/speaker-icon.png" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
+<img class="player" src="img/speaker-icon.svg" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
 <audio class="audio">
   <source src="speech/sun.wav" type="audio/wav">
 Your browser does not support this audio format (wav).
@@ -103,9 +103,9 @@ Age|4.6 Billion Years|
 # Terrestrial Planets:
 
 ## Mercury
-![Mercury](img/mercury.jpg)
+![Mercury](img/740/mercury.jpg)
 
-<img class="player" src="img/speaker-icon.png" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
+<img class="player" src="img/speaker-icon.svg" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
 <audio class="audio">
   <source src="speech/mercury.wav" type="audio/wav">
 Your browser does not support this audio format (wav).
@@ -136,7 +136,7 @@ Orbit Period|88 Earth Days|
 ## Venus
 ![Venus](img/venus.png)
 
-<img class="player" src="img/speaker-icon.png" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
+<img class="player" src="img/speaker-icon.svg" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
 <audio class="audio">
   <source src="speech/venus.wav" type="audio/wav">
 Your browser does not support this audio format (wav).
@@ -165,7 +165,7 @@ Orbit Period|224.7 Earth Days|
 <!--- Orbital Inclination|3.4 degrees| -->
 
 ## Earth
-![Earth](img/earth.jpg)
+![Earth](img/740/earth.jpg)
 
 <!-- <video width="852" height="480" autoplay loop>
 	<source src="img/earth.mp4" type="video/mp4">
@@ -173,7 +173,7 @@ Orbit Period|224.7 Earth Days|
 	<source src="img/earth.ogv" type="video/ogg">
 </video> -->
 
-<img class="player" src="img/speaker-icon.png" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
+<img class="player" src="img/speaker-icon.svg" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
 <audio class="audio">
   <source src="speech/earth.wav" type="audio/wav">
 Your browser does not support this audio format (wav).
@@ -204,7 +204,7 @@ Orbit Period|1 Earth Years|365.2 Earth Days
 ### The Moon
 ![Earth's Moon](img/moon.png)
 
-<img class="player" src="img/speaker-icon.png" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
+<img class="player" src="img/speaker-icon.svg" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
 <audio class="audio">
   <source src="speech/moon.wav" type="audio/wav">
 Your browser does not support this audio format (wav).
@@ -229,9 +229,9 @@ Orbit Period|0.074803559 Earth Years|27.322 Earth Days
 <!--- Orbital Inclination|5.1 degrees| -->
 
 ## Mars
-![Mars](img/mars.jpg)
+![Mars](img/740/mars.jpg)
 
-<img class="player" src="img/speaker-icon.png" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
+<img class="player" src="img/speaker-icon.svg" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
 <audio class="audio">
   <source src="speech/mars.wav" type="audio/wav">
 Your browser does not support this audio format (wav).
@@ -262,9 +262,9 @@ Orbit Period|687 Earth Days|
 # Jovian Planets:
 
 ## Jupiter
-![Jupiter](img/jupiter.jpg)
+![Jupiter](img/740/jupiter.jpg)
 
-<img class="player" src="img/speaker-icon.png" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
+<img class="player" src="img/speaker-icon.svg" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
 <audio class="audio">
   <source src="speech/jupiter.wav" type="audio/wav">
 Your browser does not support this audio format (wav).
@@ -293,9 +293,9 @@ Orbit Period|4,331 Earth Days|
 <!--- Orbital Inclination|1.3 degrees| -->
 
 ## Saturn
-![Saturn](img/saturn2.jpg)
+![Saturn](img/740/saturn.jpg)
 
-<img class="player" src="img/speaker-icon.png" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
+<img class="player" src="img/speaker-icon.svg" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
 <audio class="audio">
   <source src="speech/saturn.wav" type="audio/wav">
 Your browser does not support this audio format (wav).
@@ -327,9 +327,9 @@ Orbit Period|10,747 Earth Days|
 <small><sup>\*</sup> Derived from a 1 bar radius of 60,268 km.<small>
 
 ## Uranus
-![Uranus](img/uranus.jpg)
+![Uranus](img/740/uranus.jpg)
 
-<img class="player" src="img/speaker-icon.png" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
+<img class="player" src="img/speaker-icon.svg" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
 <audio class="audio">
   <source src="speech/uranus.wav" type="audio/wav">
 Your browser does not support this audio format (wav).
@@ -360,7 +360,7 @@ Orbit Period|30,589 Earth Days|
 ## Neptune
 ![Neptune](img/neptune.png)
 
-<img class="player" src="img/speaker-icon.png" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
+<img class="player" src="img/speaker-icon.svg" alt="Click to play sound" ontouchend="toggleSound(this)" onclick="toggleSound(this)" width="30" height="30">
 <audio class="audio">
   <source src="speech/neptune.wav" type="audio/wav">
 Your browser does not support this audio format (wav).

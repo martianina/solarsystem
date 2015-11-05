@@ -37,7 +37,7 @@ function toggleSound(el) {
 ## Comets
 ![Comets](img/comet.jpg)
 
-<img class="player" src="img/speaker-icon.png" alt="Click to play sound" onclick="toggleSound(this)" width="30" height="30">
+<img class="player" src="img/speaker-icon.svg" alt="Click to play sound" onclick="toggleSound(this)" width="30" height="30">
 <audio class="audio">
   <source src="speech/comets.wav" type="audio/wav">
 Your browser does not support this audio format (wav).
@@ -48,7 +48,7 @@ The outer regions of the Solar System are home to the comets: dirty ice balls co
 ## Asteroids
 ![Asteroids](img/asteroids.jpg)
 
-<img class="player" src="img/speaker-icon.png" alt="Click to play sound" onclick="toggleSound(this)" width="30" height="30">
+<img class="player" src="img/speaker-icon.svg" alt="Click to play sound" onclick="toggleSound(this)" width="30" height="30">
 <audio class="audio">
   <source src="speech/asteroids.wav" type="audio/wav">
 Your browser does not support this audio format (wav).
@@ -59,7 +59,7 @@ Asteroids are small rocky objects in the Solar System. They orbit the Sun like p
 ## Meteors and Meteorites
 ![Meteors](img/ISS-meteor.jpg)
 
-<img class="player" src="img/speaker-icon.png" alt="Click to play sound" onclick="toggleSound(this)" width="30" height="30">
+<img class="player" src="img/speaker-icon.svg" alt="Click to play sound" onclick="toggleSound(this)" width="30" height="30">
 <audio class="audio">
   <source src="speech/meteors.wav" type="audio/wav">
 Your browser does not support this audio format (wav).

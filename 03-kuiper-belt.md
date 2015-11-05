@@ -23,7 +23,7 @@ function toggleSound(el) {
 }
 </script>
 
-<img class="player" src="img/speaker-icon.png" alt="Click to play sound" onclick="toggleSound(this)" width="30" height="30">
+<img class="player" src="img/speaker-icon.svg" alt="Click to play sound" onclick="toggleSound(this)" width="30" height="30">
 <audio class="audio">
   <source src="speech/kuiper-belt.wav" type="audio/wav">
 Your browser does not support this audio format (wav).

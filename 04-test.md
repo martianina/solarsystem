@@ -18,7 +18,7 @@ Match the names with the images.
 
 <script>
 window.onload = function init() {
-    // Quizzes have to in order to match with answerers.
+    // Quizzes have to be in order to match with answerers.
     //
     // config = { // default values
     //     trailMode: false,
