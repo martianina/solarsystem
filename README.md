@@ -9,7 +9,7 @@ Note: a modern browser with WebGl is required: http://caniuse.com/#feat=webgl
 ### Requirements
 [https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll](https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll)
 
-[Ruby](https://www.ruby-lang.org/), [Ruby Gems](https://rubygems.org), [Node.js](https://nodejs.org/) and [bundler](http://bundler.io)
+[Ruby](https://www.ruby-lang.org/), [Ruby Gems](https://rubygems.org) and [bundler](http://bundler.io)
 
 ```
 gem install bundler
@@ -18,6 +18,7 @@ gem install bundler
 ### Install dependencies and serve
 
 ```
+git clone --recursive https://github.com/publicarray/solarsystem.git
 cd solarsystem
 bundle
 jekyll serve --baseurl ''
@@ -27,6 +28,7 @@ jekyll serve --baseurl ''
 
 ```
 git pull
+git submodule update --init --recursive
 bundle update
 ```
 
