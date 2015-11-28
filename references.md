@@ -18,8 +18,6 @@ group: navigation
 
 [paulbourke.net/miscellaneous/starfield](http://paulbourke.net/miscellaneous/starfield/)
 
-[answers.goocreate.com/questions/3595/can-i-draw-2d-text-in-the-3d-scene.html](https://answers.goocreate.com/questions/3595/can-i-draw-2d-text-in-the-3d-scene.html)
-
 ### Data, Text & Facts
 [stackoverflow.com/questions/11363170/units-of-three-js-calculating-rotation-orbit-speeds](http://stackoverflow.com/questions/11363170/units-of-three-js-calculating-rotation-orbit-speeds)
 

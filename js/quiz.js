@@ -6,11 +6,37 @@ function showNotice (data) {
 	el.style.visibility = (el.style.visibility === "visible") ? "hidden" : "visible";
 }
 
+// Returns a random integer between min (included) and max (excluded)
+// Using Math.round() will give you a non-uniform distribution!
+// http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random.html
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+// Returns a random number between min (inclusive) and max (exclusive)
+// http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random.html
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
 // Jonas Raoni Soares Silva
 // http://jsfromhell.com/array/shuffle [rev. #1]
-function shuffle (v) {
-    for(var j, x, i = v.length; i; j = parseInt(Math.random() * i), x = v[--i], v[i] = v[j], v[j] = x);
+function arrayShuffle (v) {
+    for (var j, x, i = v.length; i; j = getRandomInt(0, i), x = v[--i], v[i] = v[j], v[j] = x);
     return v;
+}
+
+// http://stackoverflow.com/questions/18230217/javascript-generate-a-random-number-within-a-range-using-crypto-getrandomvalues?rq=1
+function getRandomInt(min, max) {
+    // Create byte array and fill with 1 random number
+    var byteArray = new Uint8Array(1);
+    window.crypto.getRandomValues(byteArray);
+
+    var range = max - min + 1;
+    var max_range = 256;
+    if (byteArray[0] >= Math.floor(max_range / range) * range)
+        return getRandomInt(min, max);
+    return min + (byteArray[0] % range);
 }
 
 function shuffleDom (div, skip) {
@@ -22,7 +48,7 @@ function shuffleDom (div, skip) {
     for (i = 0; i < children.length/skip; i++) {
         nums[i] = i;
     }
-    nums = shuffle(nums);
+    nums = arrayShuffle(nums);
 
     for (i = 0; i < children.length/skip; i++) {
         div.appendChild(children[nums[i]*skip]);
