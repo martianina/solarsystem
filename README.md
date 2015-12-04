@@ -28,7 +28,7 @@ jekyll serve --baseurl ''
 
 ```
 git pull
-git submodule update --init --recursive
+git submodule update --init --recursive --remote
 bundle update
 ```
 
