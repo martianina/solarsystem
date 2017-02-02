@@ -1,4 +1,4 @@
 [submodule "goojs"]
 	path = goojs
-	url = https://github.com/GooTechnologies/goojs.git
+	url = https://github.com/GooTechnologies/goojs
 	branch = master
