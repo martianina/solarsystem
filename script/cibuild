@@ -3,4 +3,4 @@ set -e # halt script on error
 
 bundle install
 bundle exec jekyll build --config _config_test.yml
-bundle exec htmlproof ./_site --check-html --ignore-script-embeds --disable-external --url-ignore "#" --file-ignore "/goojs/"
+bundle exec htmlproofer ./_site --check-html --disable-external --url-ignore "#" --file-ignore "/goojs/"
