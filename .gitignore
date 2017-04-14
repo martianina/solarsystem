@@ -6,3 +6,4 @@ examples
 docs
 
 Gemfile.lock
+node_modules

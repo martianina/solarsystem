@@ -207,20 +207,7 @@ table {
  * Page content
  */
 .page-content {
-    // padding: $spacing-unit + $nav-height 0;
-    &:before, &:after {
-        content: '';
-        display: block;
-        background: $background-color;
-        height: 86px;
-        max-width: calc(800px - 30px * 2);
-        margin: 0 auto;
-        padding: 0 30px;
-        // height: $nav-height+1;
-        // margin-top: -($nav-height+2);
-        // position: relative;
-        // width: 0;
-    }
+    margin-top: $nav-height;
 }
 
 .page-heading {
@@ -251,6 +238,10 @@ table {
 /**
  * Posts
  */
+.post {
+    padding-top: $spacing-unit;
+}
+
 .post-header {
     margin-bottom: $spacing-unit;
 }
