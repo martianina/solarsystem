@@ -3,6 +3,8 @@ var earth, jupiter, mars, mercury, moon, neptune, saturn, satun, sky, sun, uranu
 var mercuryOrbit, venusOrbit, earthOrbit, moonOrbit, marsOrbit, jupiterOrbit, saturnOrbit, saturnOrbit, uranusOrbit, neptuneOrbit;
 var loader = new THREE.TextureLoader();
 
+// 1 = 1 meter
+
 var solarSystem = {
     au: 149600000, //km = 50 units
     secondsInDay: 86400,
@@ -91,6 +93,7 @@ var solarSystem = {
     }
 }
 
+var count =1;
 function Planet (diameter, distance, period, rotation) {
     this.diameter = diameter;
     this.distance = distance;
@@ -98,8 +101,8 @@ function Planet (diameter, distance, period, rotation) {
     this.rotation = rotation;
     this.orbit = new THREE.Object3D();
     this.material = new THREE.MeshPhongMaterial({shininess: 0});
-    // this.mesh = new THREE.Mesh(new THREE.SphereGeometry(10, 30, 30), new THREE.MeshBasicMaterial(0x000000));
-    this.mesh = new THREE.Mesh(new THREE.SphereGeometry(self.diameter * solarSystem.scale, 30, 30), new THREE.MeshPhongMaterial(0x000000));
+    this.mesh = new THREE.Mesh(new THREE.SphereGeometry(10, 30, 30), new THREE.MeshBasicMaterial(0x000000));
+    // this.mesh = new THREE.Mesh(new THREE.SphereGeometry(this.diameter * solarSystem.scale, 32, 32), new THREE.MeshPhongMaterial(0x000000));
     this.setMap = function (url, mapType) {
         mapType = mapType || 'map';
         loader.load(
@@ -120,8 +123,9 @@ function Planet (diameter, distance, period, rotation) {
             }
         );
     };
-    // this.mesh.position.set(50, 0, 0);
-    this.mesh.position.set(solarSystem.scale * this.distance * solarSystem.au * this.distance, 0, 0);
+    this.mesh.position.set(50*count, 0, 0);
+    count++
+    // this.mesh.position.set(solarSystem.scale * this.distance * solarSystem.au * this.distance, 0, 0);
     scene.add(this.orbit);
     this.orbit.add(this.mesh);
 }
@@ -131,17 +135,16 @@ function init() {
     scene = new THREE.Scene();
 
     // RENDERER
-    renderer = new THREE.WebGLRenderer( { antialias: true } );
+    renderer = new THREE.WebGLRenderer( { antialias: true, logarithmicDepthBuffer: true } );
     renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setClearColor( 0x000000, 1 );
     document.body.appendChild(renderer.domElement);
 
     // CAMERA
-    var VIEW_ANGLE = 45, ASPECT = window.innerWidth / window.innerHeight, NEAR = 0.1, FAR = 200000;
-    // var VIEW_ANGLE = 45, ASPECT = window.innerWidth / window.innerHeight, NEAR = 1, FAR = 500;
+    var VIEW_ANGLE = 45, ASPECT = window.innerWidth / window.innerHeight, NEAR = 1e-6, FAR = 1e27;
     camera = new THREE.PerspectiveCamera( VIEW_ANGLE, ASPECT, NEAR, FAR);
-    camera.position.set(0, 0, 700);
+    camera.position.set(0, 0, 500);
     camera.lookAt(new THREE.Vector3(0, 0, 0));
 
     // CONTROLS
@@ -312,10 +315,10 @@ function animate() {
     requestAnimationFrame( animate );
 
     // controls.update(); // required if controls.enableDamping = true, or if controls.autoRotate = true
-    sun.rotation.x += 0.001;
-    sun.rotation.y += 0.002;
+    sun.mesh.rotation.x += 0.001;
+    sun.mesh.rotation.y += 0.002;
     moon.rotation.y += 0.01;
-    earth.rotation.y += 0.01;
+    earth.mesh.rotation.y += 0.01;
 
     // mercury.orbit.rotation.y += 0.001;
     // venus.orbit.rotation.y += 0.002;
