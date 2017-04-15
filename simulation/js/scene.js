@@ -185,9 +185,11 @@ function init() {
     // var skyMaterial = new THREE.MeshFaceMaterial( materialArray );
     // var skyBox = new THREE.Mesh( skyGeometry, skyMaterial );
     // scene.add( skyBox );
-
-
-
+    getTexture('simulation/textures/sky.png', function(texture) {
+        var skybox = new THREE.Mesh( new THREE.SphereBufferGeometry( 1e20, 32, 32 ), new THREE.MeshBasicMaterial( { map: texture } ) );
+        skybox.scale.x = -1;
+        scene.add( skybox );
+    });
 
 
     // STATS
