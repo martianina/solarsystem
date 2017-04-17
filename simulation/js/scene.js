@@ -95,6 +95,7 @@ var solarSystem = {
 
 var count =1;
 function Planet (diameter, distance, period, rotation) {
+
     this.diameter = diameter;
     this.distance = distance;
     this.period = period;
@@ -103,31 +104,31 @@ function Planet (diameter, distance, period, rotation) {
     this.material = new THREE.MeshPhongMaterial({shininess: 0});
     this.mesh = new THREE.Mesh(new THREE.SphereGeometry(10, 30, 30), new THREE.MeshBasicMaterial(0x000000));
     // this.mesh = new THREE.Mesh(new THREE.SphereGeometry(this.diameter * solarSystem.scale, 32, 32), new THREE.MeshPhongMaterial(0x000000));
-    this.setMap = function (url, mapType) {
-        mapType = mapType || 'map';
-        loader.load(
-            // resource URL
-            url,
-            // Function when resource is loaded
-            function ( texture ) {
-                this.material[mapType] = texture;
-                this.mesh.material = this.material;
-            }.bind(this),
-            // Function called when download progresses
-            function ( xhr ) {
-                console.log( (xhr.loaded / xhr.total * 100) + '% loaded' );
-            },
-            // Function called when download errors
-            function ( xhr ) {
-                console.log( 'An error happened' );
-            }
-        );
-    };
     this.mesh.position.set(50*count, 0, 0);
     count++
     // this.mesh.position.set(solarSystem.scale * this.distance * solarSystem.au * this.distance, 0, 0);
     scene.add(this.orbit);
     this.orbit.add(this.mesh);
+}
+Planet.prototype.setMap = function (url, mapType) {
+    mapType = mapType || 'map';
+    loader.load(
+        // resource URL
+        url,
+        // Function when resource is loaded
+        function ( texture ) {
+            this.material[mapType] = texture;
+            this.mesh.material = this.material;
+        }.bind(this),
+        // Function called when download progresses
+        function ( xhr ) {
+            console.log( (xhr.loaded / xhr.total * 100) + '% loaded' );
+        },
+        // Function called when download errors
+        function ( xhr ) {
+            console.log( 'An error happened' );
+        }
+    );
 }
 
 function init() {
