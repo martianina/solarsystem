@@ -51,10 +51,12 @@ function shuffleDom (div, skip) {
     nums = arrayShuffle(nums);
 
     for (i = 0; i < children.length/skip; i++) {
-        div.appendChild(children[nums[i]*skip]);
-
-        for (j = 1; j < skip; j++) {
+        if (children[nums[i]*skip]) {
             div.appendChild(children[nums[i]*skip]);
+
+            for (j = 1; j < skip; j++) {
+                div.appendChild(children[nums[i]*skip]);
+            }
         }
     }
 }
@@ -192,7 +194,6 @@ function DragDropQuiz (config) {
     };
 
     // Run Functions
-
     shuffleDom(self.answerDiv);
     if (self.config.randomDestination === true) {
         shuffleDom(document.getElementById(self.config.questionId));
