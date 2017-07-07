@@ -12,11 +12,10 @@ js:
 ---
 <script>
 function toggleSound(el) {
-    console.log('click', el);
     var audioElem = el;
     var found = false;
     while (found === false) {
-        audioElem = audioElem.nextSibling;
+        audioElem = audioElem.nextSibling || audioElem.parentNode.nextSibling;
         if (audioElem.tagName === "AUDIO") {
             found = true;
         }
