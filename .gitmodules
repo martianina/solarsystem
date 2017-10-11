@@ -1,4 +1,3 @@
-[submodule "goojs"]
-	path = goojs
-	url = https://github.com/GooTechnologies/goojs
-	branch = master
+[submodule "solar-sim"]
+	path = solar-sim
+	url = https://github.com/publicarray/solar-sim
