@@ -4,14 +4,8 @@ title: References
 group: navigation
 ---
 
-[c1.goote.ch/379f2eb9aee7402fbd44650393419d83.scene](https://c1.goote.ch/379f2eb9aee7402fbd44650393419d83.scene/)
-
 ## Animation
-[goocreate.com](http://goocreate.com)
-
-[goocreate.com/learn/scriptcomponent-solar-system](http://goocreate.com/learn/scriptcomponent-solar-system/)
-
-[code.gooengine.com/latest/docs/index.html](http://code.gooengine.com/latest/docs/index.html)
+[Three.js](https://threejs.org/)
 
 ### Textures
 [planetpixelemporium.com/planets.html](http://planetpixelemporium.com/planets.html)
@@ -27,9 +21,9 @@ group: navigation
 
 [solarsystem.nasa.gov/planets/](https://solarsystem.nasa.gov/planets/)
 
-### Music
+<!-- ### Music
 [jamendo.com/en/artist/358490/stellardrone](https://www.jamendo.com/en/artist/358490/stellardrone)
-
+ -->
 ## Quiz
 [dhtmlgoodies.com/index.html?showDownload=true&whichScript=drag-drop-quiz](http://www.dhtmlgoodies.com/index.html?showDownload=true&whichScript=drag-drop-quiz)
 
@@ -38,7 +32,6 @@ group: navigation
 [github.com/timruffles/ios-html5-drag-drop-shim](https://github.com/timruffles/ios-html5-drag-drop-shim)
 
 ## Frameworks
-[code.gooengine.com](http://code.gooengine.com)
 
 [jekyllrb.com](http://jekyllrb.com)
 
