@@ -1,9 +1,9 @@
 function showNotice (data) {
     el = document.getElementById("overlay");
-	result = document.getElementById("result");
+    result = document.getElementById("result");
     data = "<div id='result'>" + data + "</div>";
     el.innerHTML = data;
-	el.style.visibility = (el.style.visibility === "visible") ? "hidden" : "visible";
+    el.style.visibility = (el.style.visibility === "visible") ? "hidden" : "visible";
 }
 
 // Returns a random integer between min (included) and max (excluded)
@@ -126,8 +126,7 @@ function DragDropQuiz (config) {
         var dragged = document.getElementById(e.dataTransfer.getData('text/plain'));
 
         // this.questionId === this.parentNode.parentNode.id
-        if (dragged !== null && dragged.questionId === this.questionId && e.target.className === self.config.destinationClass)
-        {
+        if (dragged !== null && dragged.questionId === this.questionId && e.target.className === self.config.destinationClass) {
             // show correct answers immediately
             if (self.config.trailMode === true) {
                 dragged.classList.remove('correctAnswer');
@@ -155,8 +154,7 @@ function DragDropQuiz (config) {
                 }
 
                 // when all questions are answered show results
-                if (self.numOfQuestions === self.numAnswerd)
-                {
+                if (self.numOfQuestions === self.numAnswerd) {
                     var correct = 0;
                     for (var i = 0; i < self.answerItems.length; i++) {
                         if (self.answerItems[i].correctAnswer === true) {

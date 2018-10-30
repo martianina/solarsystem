@@ -21,7 +21,7 @@ gem install bundler
 git clone --recursive https://github.com/publicarray/solarsystem.git
 cd solarsystem
 bundle
-jekyll serve --baseurl ''
+bundle exec jekyll serve --baseurl ''
 ```
 
 ### Update
