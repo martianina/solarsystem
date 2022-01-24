@@ -2,9 +2,9 @@
 title: Solar System
 description: Learn about our Solar System, Stars, Planets and Moons.
 baseurl: "/solarsystem" # the subpath of your site, e.g. /blog/
-url: "http://publicarray.github.io/solarsystem" # the base hostname & protocol for your site
+url: "http://martianina.github.io/solarsystem" # the base hostname & protocol for your site
 
-github_username:  publicarray
+github_username:  martianina
 
 # Build settings
 markdown: kramdown
